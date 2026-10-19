@@ -1,0 +1,264 @@
+*, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+  --bg: #151515;
+  --card: #1f1f1f;
+  --text: #f4f4f4;
+  --muted: #a8a8a8;
+  --accent: #ff5555;
+  --border: #333;
+  --radius: 14px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #151515;
+  background: var(--bg);
+  color: #f4f4f4;
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.45;
+}
+
+a { color: inherit; }
+img { max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 2px solid #ff5555; outline-offset: 2px; }
+
+.site-header {
+  display: -webkit-box; display: -ms-flexbox; display: flex;
+  -ms-flex-wrap: wrap; flex-wrap: wrap;
+  -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+  -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+  padding: 10px 16px;
+  border-bottom: 1px solid #333;
+}
+
+.brand { display: -webkit-box; display: -ms-flexbox; display: flex; align-items: center; margin: 4px 12px 4px 0; }
+.brand-logo { height: 44px; width: auto; display: block; margin-right: 12px; }
+.brand-name { font-weight: 800; letter-spacing: .06em; text-decoration: none; }
+.brand-name span { color: #ff5555; }
+.tagline { margin: 2px 0 0; font-size: .7rem; letter-spacing: .08em; color: #a8a8a8; }
+
+.header-actions { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; align-items: center; margin: 4px 0; }
+.phone-link, .social-links a {
+  display: inline-block;
+  margin: 4px 8px 4px 0;
+  padding: 8px 14px;
+  border: 1px solid #333;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .9rem;
+}
+.phone-link { background: #ff5555; border-color: #ff5555; color: #fff; font-weight: 600; }
+.social-links { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.container { max-width: 960px; margin: 0 auto; padding: 20px 16px 40px; }
+
+.menu-heading {
+  display: -webkit-box; display: -ms-flexbox; display: flex;
+  -ms-flex-wrap: wrap; flex-wrap: wrap;
+  -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end;
+  -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
+  margin-bottom: 8px;
+}
+.menu-heading > div { margin-bottom: 8px; }
+.eyebrow { margin: 0 0 4px; font-size: .75rem; letter-spacing: .14em; color: #ff5555; }
+.menu-heading h1 { margin: 0 0 4px; font-size: 1.8rem; }
+.muted { margin: 0; color: #a8a8a8; }
+
+.language-switch { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.language-switch button {
+  min-width: 48px;
+  min-height: 44px;
+  margin-right: 6px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: transparent;
+  color: #f4f4f4;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+}
+.language-switch button[aria-pressed="true"] { background: #ff5555; border-color: #ff5555; color: #fff; }
+
+.notice {
+  margin: 12px 0;
+  padding: 10px 14px;
+  border: 1px solid #ff5555;
+  border-left-width: 4px;
+  border-radius: 10px;
+  background: rgba(255, 85, 85, .08);
+  font-size: .95rem;
+  font-weight: 600;
+}
+.category-notice { margin: 0 0 14px; }
+
+.category-navigation {
+  position: -webkit-sticky; position: sticky;
+  top: 0;
+  z-index: 10;
+  display: -webkit-box; display: -ms-flexbox; display: flex;
+  -ms-flex-wrap: nowrap; flex-wrap: nowrap;
+  margin: 0 -16px 20px;
+  padding: 10px 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
+  background: #151515;
+  border-bottom: 1px solid #333;
+  cursor: grab;
+}
+.category-link {
+  -webkit-box-flex: 0; -ms-flex: 0 0 auto; flex: 0 0 auto;
+  margin-right: 8px;
+  padding: 10px 14px;
+  border: 1px solid #333;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .85rem;
+  white-space: nowrap;
+  -webkit-user-select: none; user-select: none;
+  -webkit-user-drag: none;
+}
+.category-link.is-active { background: #ff5555; border-color: #ff5555; color: #fff; }
+.category-navigation::after { content: ""; -ms-flex: 0 0 8px; flex: 0 0 8px; }
+
+@media (hover: none) {
+  .category-navigation { scrollbar-width: none; -ms-overflow-style: none; }
+  .category-navigation::-webkit-scrollbar { display: none; }
+}
+@media (hover: hover) {
+  .category-navigation { scrollbar-width: thin; scrollbar-color: #555 transparent; }
+  .category-navigation::-webkit-scrollbar { height: 6px; }
+  .category-navigation::-webkit-scrollbar-thumb { background: #555; border-radius: 3px; }
+}
+
+.category-section { margin-bottom: 32px; }
+.category-title { margin: 0 0 14px; font-size: 1.25rem; letter-spacing: .04em; border-left: 4px solid #ff5555; padding-left: 10px; }
+.menu-grid { display: grid; grid-gap: 12px; gap: 12px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .menu-grid { grid-template-columns: 1fr 1fr; } }
+
+.menu-card {
+  display: -webkit-box; display: -ms-flexbox; display: flex;
+  -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;
+  min-width: 0;
+  padding: 16px;
+  background: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 14px;
+}
+.item-photo { display: block; width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 12px; }
+.item-name { margin: 0 0 6px; font-size: 1.05rem; word-break: break-word; overflow-wrap: anywhere; }
+.item-description { margin: 0 0 8px; color: #a8a8a8; font-size: .9rem; }
+.item-meta { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-top: 4px; font-size: .8rem; color: #a8a8a8; }
+.item-meta span { margin: 0 8px 8px 0; padding: 3px 9px; border: 1px solid #333; border-radius: 999px; }
+.item-price { margin: auto 0 0; padding-top: 12px; font-size: 1.2rem; font-weight: 800; color: #ff5555; }
+
+.status-message, .error-message { padding: 24px 0; text-align: center; color: #a8a8a8; }
+.error-message { color: #ff5555; }
+
+.site-footer { padding: 24px 16px; border-top: 1px solid #333; text-align: center; font-size: .85rem; color: #a8a8a8; }
+.site-footer p { margin: 0 0 4px; }
+
+@media (max-width: 420px) {
+  .menu-heading h1 { font-size: 1.5rem; }
+  .brand-logo { height: 38px; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.item-ingredients {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.item-subtitle {
+  margin: 0 0 6px;
+  font-size: 0.85rem;
+}
+
+.ingredients-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.ingredients-list li {
+  margin-bottom: 3px;
+  overflow-wrap: anywhere;
+}
+
+.item-allergens {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+.item-price-promo { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.promo-badge { margin-right: 8px; padding: 2px 8px; border-radius: 6px; background: #ff5555; color: #fff; font-size: .8rem; }
+.price-old { margin-right: 8px; font-size: .95rem; font-weight: 400; color: #a8a8a8; }
+.price-new { color: #ff5555; }
+
+/* Спойлер інгредієнтів */
+details.item-ingredients { margin-top: 12px; padding-top: 10px; border-top: 1px solid #333; }
+details.item-ingredients > summary.item-subtitle {
+  margin: 0;
+  padding: 6px 0;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+}
+details.item-ingredients > summary::-webkit-details-marker { display: none; }
+details.item-ingredients > summary::before { content: "+"; display: inline-block; width: 1.2em; color: #ff5555; font-weight: 800; }
+details.item-ingredients[open] > summary::before { content: "\2212"; }
+details.item-ingredients .ingredients-list { margin-top: 6px; }
+
+/* Алергени */
+.item-allergens { margin: 12px 0 0; color: #a8a8a8; font-size: .85rem; }
+.allergen-label { color: #ff3b3b; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+
+/* Пошук */
+.search-box { margin: 4px 0 12px; }
+.search-box input {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  padding: 10px 14px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  background: #1f1f1f;
+  color: #f4f4f4;
+  font: inherit;
+  font-size: 1rem; /* 16px: iOS не масштабує сторінку при фокусі */
+  -webkit-appearance: none; appearance: none;
+}
+.search-box input::placeholder { color: #8a8a8a; }
+.search-box input:focus { outline: 2px solid #ff5555; outline-offset: 1px; }
+
+/* Кнопка «Нагору» */
+.to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 20;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: #ff5555;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .2s; transition: opacity .2s;
+}
+.to-top.is-visible { opacity: 1; visibility: visible; }
