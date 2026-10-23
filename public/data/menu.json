@@ -9,47 +9,27 @@
       "WAGA DANIA": "300",
       "SZT": 2,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "Nori 2 Ryż 140 Sałata 10 Serek 30 Łosoś 60 Kanpio 15 Awokado 15 Terijaki 5 Sos orzechowy 5 Płatki migdału 5",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nSerek\nŁosoś\nKanpio\nAwokado\nTerijaki\nSos orzechowy\nPłatki migdału",
       "ALERGEN": "ryby, soja, mleko, gluten, orzeszki ziemne / orzechy",
       "UKR_NAZWA": "Суші-бургер грильований лосось",
       "ENG_NAZWA": "Sushi Burger grilled salmon",
-      "OPIS_PL": "Sushi burger grillowany łosoś — apetyczna kompozycja z łosośiem, awokado, sosem orzechowy, ryżem sushi i dodatkami, przygotowana na świeżo. Idealna propozycja na smaczny posiłek na wynos.",
-      "OPIS_UKR": "Суші-бургер грильований лосось — апетитне поєднання: лосося, авокадо, горіхового соусу, рису для суші та вдало підібрані додатки. Свіжо приготовлена страва, щоб насолодитися улюбленими смаками.",
+      "OPIS_PL": "Sushi burger grillowany łosoś — apetyczna kompozycja z łosoś, awokado, sos orzechowy, ryżem sushi i dodatkami, przygotowana na świeżo. Idealna propozycja na smaczny posiłek na wynos.",
+      "OPIS_UKR": "Суші-бургер грильований лосось — апетитне поєднання: лосось, авокадо, горіховий соус, рис для суші та вдало підібрані додатки. Свіжо приготовлена страва, щоб насолодитися улюбленими смаками.",
       "OPIS_ENG": "Sushi burger grilled salmon — a delicious combination of salmon, avocado, nut sauce, sushi rice and complementary ingredients, freshly prepared for a satisfying takeaway meal.",
-      "PROMO": false,
-      "%PROMO": 15,
-      "ACTIVE": true,
-      "IMAGE": "101-ee7588e2.webp"
-    },
-    {
-      "ID": "102",
-      "SORT_ORDER": 2,
-      "KATEGORIJA": "SUSHI BURGER",
-      "NAZWA": "Sushi burger grillowany łosoś z mango",
-      "WAGA DANIA": "300",
-      "SZT": 2,
-      "CENA PLN": "51.00",
-      "INGR. GRAMY": "Nori 2 Ryż 140Sałata 10 Serek 40 Łosoś 60 Mango 40 Spisi majo 5Terijaki 5 Sezam 2 ",
-      "ALERGEN": "ryby, soja, mleko, jaja, gluten, sezam",
-      "UKR_NAZWA": "Суші-бургер грильований лосось з манго",
-      "ENG_NAZWA": "Sushi Burger grilled salmon z mango",
-      "OPIS_PL": "Sushi burger grillowany łosoś z mango — apetyczna kompozycja z łosoś, mango, sezam, ryżem sushi i dodatkami, przygotowana na świeżo. Idealna propozycja na smaczny posiłek na wynos.",
-      "OPIS_UKR": "Суші-бургер грильований лосось з манго — апетитне поєднання: лосось, манго, кунжут, рис для суші та вдало підібрані додатки. Свіжо приготовлена страва, щоб насолодитися улюбленими смаками.",
-      "OPIS_ENG": "Sushi burger grilled salmon z mango — a delicious combination of salmon, mango, sesame, sushi rice and complementary ingredients, freshly prepared for a satisfying takeaway meal.",
-      "PROMO": false,
+      "PROMO": true,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "102-c6339662.webp"
+      "IMAGE": "101.webp"
     },
     {
       "ID": "103",
       "SORT_ORDER": 3,
       "KATEGORIJA": "SUSHI BURGER",
-      "NAZWA": "Sushi burger tatar łosiem",
+      "NAZWA": "Sushi burger tatar łosoś",
       "WAGA DANIA": "280",
       "SZT": 2,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "Nori 2 Ryż 140Sałata 10Serek 40Awokado 30Tatar łosoś 60",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nSerek\nAwokado\nTatar łosoś",
       "ALERGEN": "ryby, mleko",
       "UKR_NAZWA": "Суші-бургер тартар łosiem",
       "ENG_NAZWA": "Sushi Burger Salmon Tartare",
@@ -59,7 +39,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "103-9d793d30.webp"
+      "IMAGE": "103.webp"
     },
     {
       "ID": "104",
@@ -69,7 +49,7 @@
       "WAGA DANIA": "280",
       "SZT": 2,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "Nori 2Ryż 140sałata 10 Serek 30 Łosoś 50 Oszinko 15 Awokado 15Sos spisi majo 10Sezam 3",
+      "INGR. GRAMY": "Nori\nRyż\nsałata\nSerek\nŁosoś\nOszinko\nAwokado\nSos spisi majo\nSezam",
       "ALERGEN": "ryby, mleko, jaja, sezam",
       "UKR_NAZWA": "Суші-бургер хрусткий з лососем",
       "ENG_NAZWA": "Sushi Burger salmon na chrupiąco",
@@ -79,7 +59,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "104-31ff133a.webp"
+      "IMAGE": "104.webp"
     },
     {
       "ID": "105",
@@ -89,7 +69,7 @@
       "WAGA DANIA": "280",
       "SZT": 2,
       "CENA PLN": "55.00",
-      "INGR. GRAMY": "Nori 2Ryż 140sałata 10 Serek 30 Krewetki 50kanpio 15mango 15Sos spisi majo 10Sezam 3",
+      "INGR. GRAMY": "Nori\nRyż\nsałata\nSerek\nKrewetki\nkanpio\nmango\nSos spisi majo\nSezam",
       "ALERGEN": "skorupiaki, soja, mleko, jaja, gluten, sezam",
       "UKR_NAZWA": "Суші-бургер креветка у панко",
       "ENG_NAZWA": "Sushi Burger shrimp in panko",
@@ -99,17 +79,17 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "105-db42c440.webp"
+      "IMAGE": "105.webp"
     },
     {
       "ID": "106",
       "SORT_ORDER": 6,
       "KATEGORIJA": "SUSHI BURGER",
-      "NAZWA": "Sushi burger krewetki gotowane",
+      "NAZWA": "Sushi burger krewetki w panko z masago",
       "WAGA DANIA": "290",
       "SZT": 2,
       "CENA PLN": "55.00",
-      "INGR. GRAMY": "Nori 2Ryż 140sałata 10 Serek 30 Krewetki 50 Masago 5 Awokado15Wakame glony 20Wiórka tepurna 5Sos spisi majo 10Sezam 3",
+      "INGR. GRAMY": "Nori\nRyż\nsałata\nSerek\nKrewetki\nMasago\nAwokado\nWakame glony\nWiórka tepurna\nSos spisi majo\nSezam",
       "ALERGEN": "ryby, skorupiaki, mleko, jaja, gluten, sezam",
       "UKR_NAZWA": "Суші-бургер з вареними креветками",
       "ENG_NAZWA": "Sushi Burger shrimp gotowane",
@@ -119,7 +99,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "106-1198f848.webp"
+      "IMAGE": "106.webp"
     },
     {
       "ID": "107",
@@ -129,7 +109,7 @@
       "WAGA DANIA": "260",
       "SZT": 2,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "Nori 2Ryż 140sałata 10 Serek 30 Krab mix 70 ",
+      "INGR. GRAMY": "Nori\nRyż\nsałata\nSerek\nKrab mix",
       "ALERGEN": "skorupiaki, soja, mleko, gluten",
       "UKR_NAZWA": "Суші-бургер krab-mix",
       "ENG_NAZWA": "Sushi Burger krab-mix",
@@ -139,7 +119,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "107-6c48e1bd.webp"
+      "IMAGE": "107.webp"
     },
     {
       "ID": "108",
@@ -149,7 +129,7 @@
       "WAGA DANIA": "290",
       "SZT": 2,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "Nori 2Ryż 140Sałata 20 Kurczak 70Serek topimy 2Spisi majo 10Terijaki sos 10Serek 30",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nKurczak\nSerek topimy\nSpisi majo\nTerijaki sos\nSerek",
       "ALERGEN": "soja, mleko, jaja, gluten",
       "UKR_NAZWA": "Суші-бургер курка panko",
       "ENG_NAZWA": "Sushi Burger chicken panko",
@@ -159,7 +139,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "108-142edd1e.webp"
+      "IMAGE": "108.webp"
     },
     {
       "ID": "109",
@@ -169,7 +149,7 @@
       "WAGA DANIA": "280",
       "SZT": 2,
       "CENA PLN": "48.00",
-      "INGR. GRAMY": "Nori 2Ryż 140Sałata 20 Krab mix 50Serek 30Łosoś 40",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nKrab mix\nSerek\nŁosoś",
       "ALERGEN": "ryby, skorupiaki, soja, mleko, gluten",
       "UKR_NAZWA": "Суші-бургер krab-mix з лососем",
       "ENG_NAZWA": "Sushi Burger krab-mix z salmon",
@@ -179,7 +159,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "109-18eca38a.webp"
+      "IMAGE": "109.webp"
     },
     {
       "ID": "110",
@@ -189,7 +169,7 @@
       "WAGA DANIA": "280",
       "SZT": 2,
       "CENA PLN": "38.00",
-      "INGR. GRAMY": "Nori 2Ryż 140Sałata 20 Wakame 40Papryka 30Awokado30Ogórek 30orzechowy 10Sezam 5",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nWakame\nPapryka\nAwokado\nOgórek\norzechowy\nSezam",
       "ALERGEN": "sezam, orzeszki ziemne / orzechy",
       "UKR_NAZWA": "Суші-бургер вакаме",
       "ENG_NAZWA": "Sushi Burger wakame",
@@ -199,7 +179,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "110-acdf7dab.webp"
+      "IMAGE": "110.webp"
     },
     {
       "ID": "111",
@@ -209,7 +189,7 @@
       "WAGA DANIA": "270",
       "SZT": 2,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "Nori 2Ryż 140Sałata 20 Cukinie 40Marchewka 40Sos sweet chili 10Sezam 5",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nCukinie\nMarchewka\nSos sweet chili\nSezam",
       "ALERGEN": "gluten, sezam, gorczyca",
       "UKR_NAZWA": "Суші-бургер warзywa chrupiąca",
       "ENG_NAZWA": "Sushi Burger warzywa chrupiąca",
@@ -219,7 +199,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "111-784af150.webp"
+      "IMAGE": "111.webp"
     },
     {
       "ID": "112",
@@ -229,7 +209,7 @@
       "WAGA DANIA": "300",
       "SZT": 2,
       "CENA PLN": "46.00",
-      "INGR. GRAMY": "Nori 2Ryż 140Sałata 10 Serek 30Kimchi 30Kurczak 70spisi majo 10Sezam 5",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nSerek\nKimchi\nKurczak\nspisi majo\nSezam",
       "ALERGEN": "soja, mleko, jaja, sezam, gorczyca",
       "UKR_NAZWA": "Суші-бургер курка kimchi",
       "ENG_NAZWA": "Sushi Burger chicken kimchi",
@@ -239,7 +219,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "112-6b7cfa59.webp"
+      "IMAGE": "112.webp"
     },
     {
       "ID": "113",
@@ -249,7 +229,7 @@
       "WAGA DANIA": "290",
       "SZT": 2,
       "CENA PLN": "59.00",
-      "INGR. GRAMY": "Nori 2Ryż 140Sałata 10 Serek 30Tatar z tuńczykaMango 20Jalapenio 6Spisi majo 10Sezam 5",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nSerek\nTatar z tuńczyka\ng, Mango\nJalapenio\nSpisi majo\nSezam",
       "ALERGEN": "ryby, mleko, jaja, sezam",
       "UKR_NAZWA": "Суші-бургер тартар з тунця",
       "ENG_NAZWA": "Sushi Burger tartare z tunaa",
@@ -259,7 +239,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "113-7e577d01.webp"
+      "IMAGE": "113.webp"
     },
     {
       "ID": "201",
@@ -269,7 +249,7 @@
       "WAGA DANIA": "440",
       "SZT": 12,
       "CENA PLN": "85.00",
-      "INGR. GRAMY": "-Futomaki z grill Łosoś i mango 6szt-Uromaki sake 4 szt-Nigiri z łososiem Surowym 1szt-Nigiri z łosoś Opalonym w terijaki 1szt",
+      "INGR. GRAMY": "-Futomaki z grill Łosoś i mango\nszt-Uromaki sake\nszt-Nigiri z łososiem Surowym\nszt-Nigiri z łosoś Opalonym w terijaki\nszt",
       "ALERGEN": "ryby, soja, gluten",
       "UKR_NAZWA": "Сет one person 1",
       "ENG_NAZWA": "Set one person 1",
@@ -279,7 +259,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "201-55ba9a91.webp"
+      "IMAGE": "201.webp"
     },
     {
       "ID": "202",
@@ -289,7 +269,7 @@
       "WAGA DANIA": "500",
       "SZT": 18,
       "CENA PLN": "97.00",
-      "INGR. GRAMY": "-Futomaki  Tatar Łosoś(rolka z czapeczkami) 6 szt-Hosomaki z ogórkiem 4szt-Hosomaki z surimi 4szt-Uromaki z opalonym łososiem(połowa opala się w sosie terijak)4szt",
+      "INGR. GRAMY": "-Futomaki\nszt smażone w panko Tatar Łosoś(rolka z czapeczkami)\nszt-Hosomaki z ogórkiem\nszt-Hosomaki z surimi\nszt-Uromaki z opalonym łososiem(połowa opala się w sosie terijak)\nszt",
       "ALERGEN": "ryby, skorupiaki, soja, gluten",
       "UKR_NAZWA": "Сет one person 2",
       "ENG_NAZWA": "Set one person 2",
@@ -299,7 +279,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "202-45ffd6bd.webp"
+      "IMAGE": "202.webp"
     },
     {
       "ID": "203",
@@ -309,7 +289,7 @@
       "WAGA DANIA": "510",
       "SZT": 16,
       "CENA PLN": "62.00",
-      "INGR. GRAMY": "-Futomaki z smaż. Marchewką 6szt-Hosomaki z awokado 4szt -Hosomaki z glonami Wakame 4szt-Nigiri z tofu węzonym smażonym na Chrupionco 2szt",
+      "INGR. GRAMY": "-Futomaki z smaż. Marchewką\nszt-Hosomaki z awokado\nszt -Hosomaki z glonami Wakame\nszt-Nigiri z tofu węzonym smażonym na Chrupionco\nszt",
       "ALERGEN": "soja",
       "UKR_NAZWA": "Сет „one-person wege”",
       "ENG_NAZWA": "Set „one-person wege”",
@@ -319,7 +299,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "203-45bf1d3a.webp"
+      "IMAGE": "203.webp"
     },
     {
       "ID": "204",
@@ -329,7 +309,7 @@
       "WAGA DANIA": "1030",
       "SZT": 28,
       "CENA PLN": "195.00",
-      "INGR. GRAMY": "-Uromaki Surowo Opalony z krewetką(połowa opala Się w terijaki) 8szt-Futomaki z Łososiem surowym 6szt-Futomaki z Grilowanym Łososiem  6szt-Uromaki unagi 8szt",
+      "INGR. GRAMY": "-Uromaki Surowo Opalony z krewetką(połowa opala Się w terijaki)\nszt-Futomaki z Łososiem surowym\nszt-Futomaki z Grilowanym Łososiem\nszt-Uromaki unagi\nszt",
       "ALERGEN": "skorupiaki, soja, gluten",
       "UKR_NAZWA": "Сет dla dwojga",
       "ENG_NAZWA": "Set dla dwojga",
@@ -349,7 +329,7 @@
       "WAGA DANIA": "1200",
       "SZT": 32,
       "CENA PLN": "251.00",
-      "INGR. GRAMY": "-UROMAKI z łososiem I węgorzem 8szt-Uromaki z Łososiem Opalony na pół(połowa rolki opala się z terijakiem) 8szt-Uromaki Tuna 8szt-Futomaki  Tatar Łosoś(rolka z czapeczkami) 6sztInari z łososiem grill 2 szt",
+      "INGR. GRAMY": "-UROMAKI z łososiem I węgorzem\nszt-Uromaki z Łososiem Opalony na pół(połowa rolki opala się z terijakiem)\nszt-Uromaki Tuna\nszt-Futomaki  Tatar Łosoś(rolka z czapeczkami)\nsztInari z łososiem grill\nszt",
       "ALERGEN": "ryby, soja, gluten",
       "UKR_NAZWA": "Сет „FILA”",
       "ENG_NAZWA": "Set „FILA”",
@@ -369,7 +349,7 @@
       "WAGA DANIA": "1400",
       "SZT": 58,
       "CENA PLN": "150.00",
-      "INGR. GRAMY": "-Uromaki z grill łosos 10szt (gril łosoś,ogórek,serek,kanpio,awokado,terijaki, Sezam)-Uromaki surowy łosoś w tępurnej wiórce  ( łosoś,serek, ogórek,oszinko)-Uromaki w sezamie z krab mix10szt (krab mix,mango,sezam)-Futomaki z grilowanym łosośiem(gril łosos,serek,kampio,sałata,ogurek,terijak,pł migdał,Smażony w panko 6szt)-Futomaki z kurczakiem smażonyw panko (kurczak,serek,sałata,ogurek,serek topiony,sos żurawina,terijak,sezam) 6sztHosomaki mix warzywne 16sztSos soja 2,wasabi 1, imbir 1",
+      "INGR. GRAMY": "-Uromaki z grill łosos\nszt (gril łosoś,ogórek,serek,kanpio,awokado,terijaki, Sezam)-Uromaki surowy łosoś w tępurnej wiórce  ( łosoś,serek, ogórek,oszinko)-Uromaki w sezamie z krab mix\nszt (krab mix,mango,sezam)-Futomaki z grilowanym łosośiem(gril łosos,serek,kampio,sałata,ogurek,terijak,pł migdał,Smażony w panko\nszt)-Futomaki z kurczakiem smażonyw panko (kurczak,serek,sałata,ogurek,serek topiony,sos żurawina,terijak,sezam)\nsztHosomaki mix warzywne\nsztSos soja\nwasabi\nimbir",
       "ALERGEN": "ryby, skorupiaki, soja, mleko, jaja, gluten, sezam",
       "UKR_NAZWA": "Сет \"XL\" на 4 особи",
       "ENG_NAZWA": "Set „XL” for 4 person",
@@ -389,7 +369,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "Nori 0,5Ryż 100Serek 20Łosoś 50Sałata 20Awokado 20Ogуrek 20Oszinko 20",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nŁosoś\nSałata\nAwokado\nOgуrek\nOszinko",
       "ALERGEN": "ryby, mleko",
       "UKR_NAZWA": "Футомакі з сирим лососем",
       "ENG_NAZWA": "Futomaki with raw salmon",
@@ -399,7 +379,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "301-959b3c51.webp"
+      "IMAGE": "301.webp"
     },
     {
       "ID": "302",
@@ -409,7 +389,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100sos spisi majo 2Wiуrka-tępurna 5Tuńczyk 50Mango 20Sałata 20Tomago 20Ogуrek 30",
+      "INGR. GRAMY": "Nori\nRyż\nsos spisi majo\nWiуrka-tępurna\nTuńczyk\nMango\nSałata\nTomago\nOgуrek",
       "ALERGEN": "ryby, jaja",
       "UKR_NAZWA": "Футомакі з тунцем",
       "ENG_NAZWA": "Futomaki with tuna",
@@ -419,7 +399,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "302-9ff567dc.webp"
+      "IMAGE": "302.webp"
     },
     {
       "ID": "303",
@@ -429,7 +409,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100Serek 30Węgorz 40Awokado 20Sałata 20kawior masago 5Ogуrek 20terijaki sos 5Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nWęgorz\nAwokado\nSałata\nkawior masago\nOgуrek\nterijaki sos\nSezam",
       "ALERGEN": "ryby, soja, mleko, gluten, sezam",
       "UKR_NAZWA": "Футомакі з вугрем",
       "ENG_NAZWA": "Futomaki with eel",
@@ -439,7 +419,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "303-7d26f192.webp"
+      "IMAGE": "303.webp"
     },
     {
       "ID": "304",
@@ -449,7 +429,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100Sałata 20spisi majo 2Łosoś 30krewetki gotowane 30Masago 5Awokado 20Mango 20Ogуrek 20",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nspisi majo\nŁosoś\nkrewetki gotowane\nMasago\nAwokado\nMango\nOgуrek",
       "ALERGEN": "ryby, skorupiaki, jaja",
       "UKR_NAZWA": "Футомакі з креветкою та лососем",
       "ENG_NAZWA": "Futomaki with shrimp and salmon",
@@ -459,7 +439,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "304-f791b414.webp"
+      "IMAGE": "304.webp"
     },
     {
       "ID": "305",
@@ -469,7 +449,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100Sałata 20Surimi 60Awokado 20Oszinko 20Ogуrek 30Szczypior 2",
+      "INGR. GRAMY": "Nori\nRyż\nSałata\nSurimi\nAwokado\nOszinko\nOgуrek\nSzczypior",
       "ALERGEN": "skorupiaki, soja, gluten",
       "UKR_NAZWA": "Футомакі з салатом сурімі",
       "ENG_NAZWA": "Futomaki with surimi salad",
@@ -479,7 +459,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "305-39e04bca.webp"
+      "IMAGE": "305.webp"
     },
     {
       "ID": "306",
@@ -489,7 +469,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100Wiуrka-tępurna 5Serek 30łosoś grill 50Mango 30Sałata 10spisi majo 5Kanpio 20terijaki sos 5Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nWiуrka-tępurna\nSerek\nłosoś grill\nMango\nSałata\nspisi majo\nKanpio\nterijaki sos\nSezam",
       "ALERGEN": "ryby, soja, mleko, jaja, gluten, sezam",
       "UKR_NAZWA": "Футомакі з грильований лосось i манго",
       "ENG_NAZWA": "Futomaki with grilled salmon i mango",
@@ -499,7 +479,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "306-b109d0a3.webp"
+      "IMAGE": "306.webp"
     },
     {
       "ID": "307",
@@ -509,7 +489,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "55.00",
-      "INGR. GRAMY": "Nori:05Ryż:100Serek:30krewetki zmażP:40Oszinko:20Mango:20Sałata:20Kanpio:20",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nkrewetki zmażP\nOszinko\nMango\nSałata\nKanpio\nkropki z spisi majo\ng",
       "ALERGEN": "skorupiaki, soja, mleko, jaja, gluten",
       "UKR_NAZWA": "Футомакі з krewetką смаженою у панко",
       "ENG_NAZWA": "Futomaki with shrimp fried in panko",
@@ -519,7 +499,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "307-503efd84.webp"
+      "IMAGE": "307.webp"
     },
     {
       "ID": "308",
@@ -529,7 +509,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "Nori:0.5Ryż:100Serek:30Sałata:20Grill łosoś:50Kanpio:20Ogуrek:20terijaki sos:5Sezam:2",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nSałata\nGrill łosoś\nKanpio\nOgуrek\nterijaki sos\nSezam",
       "ALERGEN": "ryby, soja, mleko, gluten, sezam",
       "UKR_NAZWA": "Футомакі з грильованийm лососем",
       "ENG_NAZWA": "Futomaki with grilledm salmon",
@@ -539,7 +519,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "308-7bb01a68.webp"
+      "IMAGE": "308.webp"
     },
     {
       "ID": "309",
@@ -549,7 +529,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "55.00",
-      "INGR. GRAMY": "Nori:0.5Ryż:100 Serek:20Awokado:20 Kanpio 10Ogórek 10tatar z łosośia 60Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nAwokado\nKanpio\nOgórek\ntatar z łosośia\nSezam",
       "ALERGEN": "ryby, soja, mleko, sezam",
       "UKR_NAZWA": "Футомакі тартар лосось",
       "ENG_NAZWA": "Futomaki tartare with salmon",
@@ -569,7 +549,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "55.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100Serek 20Sałata 20Ogórek 20Awokado 20Tuńczyk 60Wiórka-tępurna 10sos ostrygowy 5Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nSałata\nOgórek\nAwokado\nTuńczyk\nWiórka-tępurna\nsos ostrygowy\nSezam",
       "ALERGEN": "ryby, mięczaki, mleko, gluten, sezam",
       "UKR_NAZWA": "Футомакі тартар з тунецьa",
       "ENG_NAZWA": "Futomaki tartare with tunaa",
@@ -589,7 +569,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100Papryka 30S-t wakame 30Marchewka 30Ogórek 30Sałata 10Awokado 20sos orzechowy 5Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nPapryka\nS-t wakame\nMarchewka\nOgórek\nSałata\nAwokado\nsos orzechowy\nSezam",
       "ALERGEN": "sezam, orzeszki ziemne / orzechy",
       "UKR_NAZWA": "Футомакі wege з glonami вакаме",
       "ENG_NAZWA": "Futomaki wege z glonami wakame",
@@ -599,7 +579,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "311-8ee98a0d.webp"
+      "IMAGE": "311.webp"
     },
     {
       "ID": "312",
@@ -609,7 +589,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100cukinia smaż 50Ogórek 20Sałata 20Kanpio 30Oszinko 20sos sweet chili 10Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\ncukinia smaż\nOgórek\nSałata\nKanpio\nOszinko\nsos sweet chili\nSezam",
       "ALERGEN": "soja, jaja, gluten, sezam, gorczyca",
       "UKR_NAZWA": "Футомакі з смаженою cukinią у панко",
       "ENG_NAZWA": "Futomaki with fried cukinią in panko",
@@ -619,7 +599,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "312-9df8a5a0.webp"
+      "IMAGE": "312.webp"
     },
     {
       "ID": "313",
@@ -629,7 +609,7 @@
       "WAGA DANIA": "250",
       "SZT": 6,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 100smaż marchewka 50Oszinko 30Sałata 20Ogórek 20Awokado 20sos orzechowy 10",
+      "INGR. GRAMY": "Nori\nRyż\nsmaż marchewka\nOszinko\nSałata\nOgórek\nAwokado\nsos orzechowy",
       "ALERGEN": "orzeszki ziemne / orzechy",
       "UKR_NAZWA": "Футомакі зі смаженою морквою",
       "ENG_NAZWA": "Futomaki with fried carrots",
@@ -639,7 +619,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "313-1ac0e425.webp"
+      "IMAGE": "313.webp"
     },
     {
       "ID": "401",
@@ -649,7 +629,7 @@
       "WAGA DANIA": "260",
       "SZT": 8,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Serek 40Awokado 20Ogórek 20Łosoś 60",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nAwokado\nOgórek\nŁosoś",
       "ALERGEN": "ryby, mleko",
       "UKR_NAZWA": "Урамакі з łosiem",
       "ENG_NAZWA": "Uramaki with salmon",
@@ -659,7 +639,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "401-e573b160.webp"
+      "IMAGE": "401.webp"
     },
     {
       "ID": "402",
@@ -669,7 +649,7 @@
       "WAGA DANIA": "280",
       "SZT": 8,
       "CENA PLN": "53.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Serek 40Awokado 20Ogórek 20Łosoś 40Węgorz 40",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nAwokado\nOgórek\nŁosoś\nWęgorz",
       "ALERGEN": "ryby, mleko",
       "UKR_NAZWA": "Урамакі з łosiem i вугрем",
       "ENG_NAZWA": "Uramaki with salmon and eel",
@@ -679,7 +659,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "402-504be591.webp"
+      "IMAGE": "402.webp"
     },
     {
       "ID": "403",
@@ -689,7 +669,7 @@
       "WAGA DANIA": "300",
       "SZT": 8,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Serek 40Ogórek 30S-t surimi 30Łosoś 40Tuńczyk 40",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nOgórek\nS-t surimi\nŁosoś\nTuńczyk",
       "ALERGEN": "ryby, skorupiaki, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі з тунцем i łosiem",
       "ENG_NAZWA": "Uramaki z tuna and salmon",
@@ -699,27 +679,27 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "403-827d0375.webp"
+      "IMAGE": "403.webp"
     },
     {
       "ID": "404",
       "SORT_ORDER": 36,
       "KATEGORIJA": "UROMAKI",
-      "NAZWA": "Uromaki z łosiem opalony na pół",
+      "NAZWA": "Uromaki z łosiem opalony na pół (połowa opala się w sosie teriyaki)",
       "WAGA DANIA": "285",
       "SZT": 8,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Serek 40Mango 30Tomago 30Łosoś 60terijaki sos 5",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nMango\nTomago\nŁosoś\nterijaki sos",
       "ALERGEN": "ryby, soja, mleko, jaja, gluten",
       "UKR_NAZWA": "Урамакі з łosiem opalony na pół (połowa opala się w sosie teriyaki)",
       "ENG_NAZWA": "Uramaki z łosiem opalony na pół (połowa opala się w sosie teriyaki)",
-      "OPIS_PL": "Uromaki z łosiem opalony na pół (połowa opala się w sosie teriyaki) — apetyczna kompozycja z łosośiem, mango, tamago, ryżem sushi i dodatkami, przygotowana na świeżo. Idealna propozycja na smaczny posiłek na wynos.",
-      "OPIS_UKR": "Урамакі з łosiem opalony na pół (połowa opala się w sosie teriyaki) — апетитне поєднання: лосося, манго, тамаго, рису для суші та вдало підібрані додатки. Свіжо приготовлений ролл, щоб насолодитися улюбленими смаками.",
+      "OPIS_PL": "Uromaki z łosiem opalony na pół (połowa opala się w sosie teriyaki) — apetyczna kompozycja z łosoś, mango, tamago, ryżem sushi i dodatkami, przygotowana na świeżo. Idealna propozycja na smaczny posiłek na wynos.",
+      "OPIS_UKR": "Урамакі з łosiem opalony na pół (połowa opala się w sosie teriyaki) — апетитне поєднання: лосось, манго, тамаго, рис для суші та вдало підібрані додатки. Свіжо приготовлена страва, щоб насолодитися улюбленими смаками.",
       "OPIS_ENG": "Uramaki z łosiem opalony na pół (połowa opala się w sosie teriyaki) — a delicious combination of salmon, mango, tamago, sushi rice and complementary ingredients, freshly prepared for a satisfying takeaway meal.",
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "404-c2574fca.webp"
+      "IMAGE": "404.webp"
     },
     {
       "ID": "405",
@@ -729,7 +709,7 @@
       "WAGA DANIA": "267",
       "SZT": 8,
       "CENA PLN": "55.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Serek 40Mango 30Kanpio 10Siriracia 2Łosoś 60terijaki sos 5",
+      "INGR. GRAMY": "Nori\nRyż\nSerek\nMango\nKanpio\nSiriracia\nŁosoś\nterijaki sos",
       "ALERGEN": "ryby, soja, mleko, jaja, gluten",
       "UKR_NAZWA": "Урамакі з opalonym лососем na ostro (połowa opala się w sosie teriyaki)",
       "ENG_NAZWA": "Uramaki z opalonym salmon na ostro (połowa opala się w sosie teriyaki)",
@@ -739,7 +719,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "405-51515eb9.webp"
+      "IMAGE": "405.webp"
     },
     {
       "ID": "406",
@@ -749,7 +729,7 @@
       "WAGA DANIA": "290",
       "SZT": 8,
       "CENA PLN": "60.00",
-      "INGR. GRAMY": "nori 0.5ryż 120serek 30krewetki zmaż.w 30kanpio 20ogórek 30łosos 60terijaki sos 5",
+      "INGR. GRAMY": "nori\nryż\nserek\nkrewetki zmaż.w\nkanpio\nogórek\nłosos\nterijaki sos",
       "ALERGEN": "skorupiaki, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі surowo opalony з krewetką (połowa opala się w teriyaki)",
       "ENG_NAZWA": "Uramaki surowo opalony z krewetką (połowa opala się w teriyaki)",
@@ -759,7 +739,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "406-3db5bcef.webp"
+      "IMAGE": "406.webp"
     },
     {
       "ID": "407",
@@ -769,7 +749,7 @@
       "WAGA DANIA": "250",
       "SZT": 8,
       "CENA PLN": "60.00",
-      "INGR. GRAMY": "nori 0.5ryż 120serek 40mango 30masago 5węgorz 50terijaki sos 5sezam 2",
+      "INGR. GRAMY": "nori\nryż\nserek\nmango\nmasago\nwęgorz\nterijaki sos\nsezam",
       "ALERGEN": "ryby, soja, mleko, gluten, sezam",
       "UKR_NAZWA": "Урамакі з вугрем (opala się w teriyaki)",
       "ENG_NAZWA": "Uramaki z eel (opala się w teriyaki)",
@@ -779,7 +759,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "407-160b56c5.webp"
+      "IMAGE": "407.webp"
     },
     {
       "ID": "408",
@@ -789,7 +769,7 @@
       "WAGA DANIA": "280",
       "SZT": 8,
       "CENA PLN": "63.00",
-      "INGR. GRAMY": "nori 0.5ryż 120serek 40awokado 30nori 30sos ostrygowy 10Tunczyk 50sezam 2",
+      "INGR. GRAMY": "nori\nryż\nserek\nawokado\nsos ostrygowy\nTunczyk\nsezam",
       "ALERGEN": "ryby, mięczaki, mleko, gluten, sezam",
       "UKR_NAZWA": "Урамакі tuna",
       "ENG_NAZWA": "Uramaki tuna",
@@ -799,7 +779,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "408-689e11b8.webp"
+      "IMAGE": "408.webp"
     },
     {
       "ID": "409",
@@ -809,7 +789,7 @@
       "WAGA DANIA": "280",
       "SZT": 8,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "nori 0.5ryż 120awokado 30serek 20surimi 50łosoś 60",
+      "INGR. GRAMY": "nori\nryż\nawokado\nserek\nsurimi\nłosoś",
       "ALERGEN": "ryby, skorupiaki, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі лосось сурімі",
       "ENG_NAZWA": "Uramaki salmon surimi",
@@ -819,7 +799,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "409-1923702b.webp"
+      "IMAGE": "409.webp"
     },
     {
       "ID": "410",
@@ -829,7 +809,7 @@
       "WAGA DANIA": "210",
       "SZT": 8,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Serek topiny 2.5Terijaki 2Kurczak smażony 50Sałata 10Serek 30",
+      "INGR. GRAMY": "Nori\nRyż\nSerek topiny\nTerijaki\nKurczak smażony\nSałata\nSerek",
       "ALERGEN": "soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі з куркою smażonym",
       "ENG_NAZWA": "Uramaki z chicken smażonym",
@@ -839,7 +819,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "410-46777981.webp"
+      "IMAGE": "410.webp"
     },
     {
       "ID": "411",
@@ -849,7 +829,7 @@
       "WAGA DANIA": "250",
       "SZT": 8,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "Nori 0.5Ryz 120Serek topiony 2.5Terijaki 2Łosoś 50Awokado 30Szczypior 2Kanpio 30",
+      "INGR. GRAMY": "Nori\nRyz\nSerek topiony\nTerijaki\nŁosoś\nAwokado\nSzczypior\nKanpio",
       "ALERGEN": "ryby, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі з лососем",
       "ENG_NAZWA": "Uramaki z salmon",
@@ -859,7 +839,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "411-4ed5db2d.webp"
+      "IMAGE": "411.webp"
     },
     {
       "ID": "412",
@@ -869,7 +849,7 @@
       "WAGA DANIA": "230",
       "SZT": 8,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "NoriI 0.5Ryż 120Serek topiony 2.5Terijak 2Krab mix 70Ogórek 30",
+      "INGR. GRAMY": "NoriI\nRyż\nSerek topiony\nTerijak\nKrab mix\nOgórek",
       "ALERGEN": "skorupiaki, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі з krab-mixem",
       "ENG_NAZWA": "Uramaki z krab-mixem",
@@ -879,7 +859,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "412-847d024a.webp"
+      "IMAGE": "412.webp"
     },
     {
       "ID": "413",
@@ -889,7 +869,7 @@
       "WAGA DANIA": "250",
       "SZT": 8,
       "CENA PLN": "50.00",
-      "INGR. GRAMY": "NoriI 0.5Ryż 120Serek topiony 2.5Terijak 2Łosos 30Krewetki 30Węgorz 30Masago 3Ogórek 20",
+      "INGR. GRAMY": "NoriI\nRyż\nSerek topiony\nTerijak\nŁosos\nKrewetki\nWęgorz\nMasago\nOgórek",
       "ALERGEN": "ryby, skorupiaki, mleko",
       "UKR_NAZWA": "Урамакі sashimi-mix",
       "ENG_NAZWA": "Uramaki sashimi-mix",
@@ -899,7 +879,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "413-c5220eab.webp"
+      "IMAGE": "413.webp"
     },
     {
       "ID": "414",
@@ -909,7 +889,7 @@
       "WAGA DANIA": "265",
       "SZT": 8,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "nori 0.5Ryż 120Serek topiony 2.5Grill łosoś 50serek 30kanpio 20ogórek 30sezam 10terijaki sos 5",
+      "INGR. GRAMY": "nori\nRyż\nSerek topiony\nGrill łosoś\nserek\nkanpio\nogórek\nsezam\nterijaki sos",
       "ALERGEN": "ryby, soja, mleko, gluten, sezam",
       "UKR_NAZWA": "Урамакі з grilowanym лососем",
       "ENG_NAZWA": "Uramaki z grilowanym salmon",
@@ -919,7 +899,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "414-ffb2a98e.webp"
+      "IMAGE": "414.webp"
     },
     {
       "ID": "415",
@@ -929,7 +909,7 @@
       "WAGA DANIA": "235",
       "SZT": 8,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "nori 0.5ryż 120krewetki 30spisi majo 5serek 30ogórek 30oszinko10awokado10",
+      "INGR. GRAMY": "nori\nryż\nkrewetki\nspisi majo\nserek\nogórek\noszinko\nawokado\nsezam\ng",
       "ALERGEN": "skorupiaki, mleko, jaja, gluten",
       "UKR_NAZWA": "Урамакі з креветкою смажене у панко",
       "ENG_NAZWA": "Uramaki with shrimp fried in panko",
@@ -939,7 +919,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "415-11332c1b.webp"
+      "IMAGE": "415.webp"
     },
     {
       "ID": "416",
@@ -949,7 +929,7 @@
       "WAGA DANIA": "235",
       "SZT": 8,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "nori 0.5ryż 120łosoś 50ogórek 30serek 30sezam 5",
+      "INGR. GRAMY": "nori\nryż\nłosoś\nogórek\nserek\nsezam",
       "ALERGEN": "ryby, mleko, sezam",
       "UKR_NAZWA": "Uro w кунжутie з surowym лососем",
       "ENG_NAZWA": "Uro w sesameie z surowym salmon",
@@ -959,7 +939,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "416-66c1216b.webp"
+      "IMAGE": "416.webp"
     },
     {
       "ID": "417",
@@ -969,7 +949,7 @@
       "WAGA DANIA": "220",
       "SZT": 8,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "nori 0.5ryż 120sałatka surimi 60awokado 40szczypior 5sezam 5",
+      "INGR. GRAMY": "nori\nryż\nsałatka surimi\nawokado\nszczypior\noszinko\ng,sezam",
       "ALERGEN": "skorupiaki, soja, gluten, sezam",
       "UKR_NAZWA": "Урамакі з sałatką сурімі",
       "ENG_NAZWA": "Uramaki z sałatką surimi",
@@ -979,7 +959,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "417-59a7d876.webp"
+      "IMAGE": "417.webp"
     },
     {
       "ID": "418",
@@ -989,7 +969,7 @@
       "WAGA DANIA": "240",
       "SZT": 8,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "nori0.5ryż120Wiórka-tępurna 10Serek 40Węgorz 40Mango 30terijaki sos 5",
+      "INGR. GRAMY": "nori\nryż\nWiórka-tępurna\nSerek\nWęgorz\nMango\nterijaki sos",
       "ALERGEN": "ryby, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі unagi",
       "ENG_NAZWA": "Uramaki unagi",
@@ -999,7 +979,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "418-0d46e04b.webp"
+      "IMAGE": "418.webp"
     },
     {
       "ID": "419",
@@ -1009,7 +989,7 @@
       "WAGA DANIA": "240",
       "SZT": 8,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 120Wiórka-tępurna 10Serek 30Łosoś 50Ogórek 30",
+      "INGR. GRAMY": "Nori\nRyż\nWiórka-tępurna\nSerek\nŁosoś\nOgórek",
       "ALERGEN": "ryby, mleko",
       "UKR_NAZWA": "Урамакі sake",
       "ENG_NAZWA": "Uramaki sake",
@@ -1019,7 +999,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "419-46984b38.webp"
+      "IMAGE": "419.webp"
     },
     {
       "ID": "420",
@@ -1029,7 +1009,7 @@
       "WAGA DANIA": "240",
       "SZT": 8,
       "CENA PLN": "45.00",
-      "INGR. GRAMY": "nori0.5ryż120Wiórka-tępurna10smaż tuńczuk50serek30awokado20terijaki sos10",
+      "INGR. GRAMY": "nori\nryż\nWiórka-tępurna\nsmaż tuńczuk\nserek\nawokado\nterijaki sos",
       "ALERGEN": "ryby, soja, mleko, gluten",
       "UKR_NAZWA": "Урамакі maguro",
       "ENG_NAZWA": "Uramaki maguro",
@@ -1039,7 +1019,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "420-2cab1dd1.webp"
+      "IMAGE": "420.webp"
     },
     {
       "ID": "421",
@@ -1049,7 +1029,7 @@
       "WAGA DANIA": "240",
       "SZT": 8,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "nori0.5ryż120Wiórka-tępurna 10Kanpio 20Łosoś grill 50Serek 20Ogórek 20",
+      "INGR. GRAMY": "nori\nryż\nWiórka-tępurna\nKanpio\nŁosoś grill\nSerek\nOgórek\nsos terijaki\ng",
       "ALERGEN": "ryby, soja, mleko",
       "UKR_NAZWA": "Урамакі з grilowanym лососем",
       "ENG_NAZWA": "Uramaki z grilowanym salmon",
@@ -1059,7 +1039,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "421-7421c49b.webp"
+      "IMAGE": "421.webp"
     },
     {
       "ID": "501",
@@ -1069,7 +1049,7 @@
       "WAGA DANIA": "130",
       "SZT": 8,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "nori0.5ryż80Łosoś50",
+      "INGR. GRAMY": "nori\nryż\nŁosoś",
       "ALERGEN": "ryby",
       "UKR_NAZWA": "Хосомакі з лососем",
       "ENG_NAZWA": "Hosomaki z salmon",
@@ -1079,7 +1059,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "501-df594bb6.webp"
+      "IMAGE": "501.webp"
     },
     {
       "ID": "502",
@@ -1089,7 +1069,7 @@
       "WAGA DANIA": "130",
       "SZT": 8,
       "CENA PLN": "25.00",
-      "INGR. GRAMY": "Nori 0.5ryż 80łosoś grill 40kanpio 10",
+      "INGR. GRAMY": "Nori\nryż\nłosoś grill\nkanpio",
       "ALERGEN": "ryby, soja",
       "UKR_NAZWA": "Хосомакі з grilowanym лососем",
       "ENG_NAZWA": "Hosomaki z grilowanym salmon",
@@ -1099,7 +1079,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "502-09f1584d.webp"
+      "IMAGE": "502.webp"
     },
     {
       "ID": "503",
@@ -1109,7 +1089,7 @@
       "WAGA DANIA": "130",
       "SZT": 8,
       "CENA PLN": "27.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80Krewetki 40",
+      "INGR. GRAMY": "Nori\nRyż\nKrewetki",
       "ALERGEN": "skorupiaki, jaja, gluten",
       "UKR_NAZWA": "Хосомакі з krewetką у панко",
       "ENG_NAZWA": "Hosomaki z krewetką in panko",
@@ -1119,7 +1099,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "503-6739be94.webp"
+      "IMAGE": "503.webp"
     },
     {
       "ID": "504",
@@ -1129,7 +1109,7 @@
       "WAGA DANIA": "125",
       "SZT": 8,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80Węgorz 40terijaki sos 5Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nWęgorz\nterijaki sos\nSezam",
       "ALERGEN": "ryby, soja, gluten, sezam",
       "UKR_NAZWA": "Хосомакі з вугрем",
       "ENG_NAZWA": "Hosomaki z eel",
@@ -1139,7 +1119,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "504-85577e82.webp"
+      "IMAGE": "504.webp"
     },
     {
       "ID": "505",
@@ -1149,7 +1129,7 @@
       "WAGA DANIA": "125",
       "SZT": 8,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80Tuńczyk 30Szczypior 5",
+      "INGR. GRAMY": "Nori\nRyż\nTuńczyk\nSzczypior",
       "ALERGEN": "ryby",
       "UKR_NAZWA": "Хосомакі з тунцем",
       "ENG_NAZWA": "Hosomaki z tuna",
@@ -1159,7 +1139,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "505-2105e770.webp"
+      "IMAGE": "505.webp"
     },
     {
       "ID": "506",
@@ -1169,7 +1149,7 @@
       "WAGA DANIA": "125",
       "SZT": 8,
       "CENA PLN": "15.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80Ogórek 40Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nOgórek\nSezam",
       "ALERGEN": "sezam",
       "UKR_NAZWA": "Хосомакі з огірком",
       "ENG_NAZWA": "Hosomaki z cucumber",
@@ -1179,7 +1159,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "506-c3b0943b.webp"
+      "IMAGE": "506.webp"
     },
     {
       "ID": "507",
@@ -1189,7 +1169,7 @@
       "WAGA DANIA": "120",
       "SZT": 8,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80Awokado 40",
+      "INGR. GRAMY": "Nori\nRyż\nAwokado",
       "ALERGEN": "—",
       "UKR_NAZWA": "Хосомакі з авокадо",
       "ENG_NAZWA": "Hosomaki z avocado",
@@ -1199,7 +1179,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "507-a64c78a9.webp"
+      "IMAGE": "507.webp"
     },
     {
       "ID": "508",
@@ -1209,7 +1189,7 @@
       "WAGA DANIA": "130",
       "SZT": 8,
       "CENA PLN": "22.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80Tomago 40Serek 10",
+      "INGR. GRAMY": "Nori\nRyż\nTomago\nSerek",
       "ALERGEN": "mleko, jaja",
       "UKR_NAZWA": "Хосомакі з tamago",
       "ENG_NAZWA": "Hosomaki z tamago",
@@ -1219,7 +1199,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "508-ca4b0e40.webp"
+      "IMAGE": "508.webp"
     },
     {
       "ID": "509",
@@ -1229,7 +1209,7 @@
       "WAGA DANIA": "120",
       "SZT": 8,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80 Surimi 40",
+      "INGR. GRAMY": "Nori\nRyż\nSurimi",
       "ALERGEN": "skorupiaki, soja, gluten",
       "UKR_NAZWA": "Хосомакі з сурімі",
       "ENG_NAZWA": "Hosomaki z surimi",
@@ -1239,7 +1219,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "509-72a54dd0.webp"
+      "IMAGE": "509.webp"
     },
     {
       "ID": "510",
@@ -1249,7 +1229,7 @@
       "WAGA DANIA": "130",
       "SZT": 8,
       "CENA PLN": "15.00",
-      "INGR. GRAMY": "Nori 0.5Ryż 80 Wakame 40sos orzechowy 10",
+      "INGR. GRAMY": "Nori\nRyż\nWakame\nsos orzechowy",
       "ALERGEN": "orzeszki ziemne / orzechy",
       "UKR_NAZWA": "Хосомакі з glonami вакаме",
       "ENG_NAZWA": "Hosomaki z glonami wakame",
@@ -1259,7 +1239,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "510-d6893a3c.webp"
+      "IMAGE": "510.webp"
     },
     {
       "ID": "511",
@@ -1269,7 +1249,7 @@
       "WAGA DANIA": "70",
       "SZT": 2,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "Nori 0.2Ryż 40Łosoś 30spisi majo 5spisi majo 5",
+      "INGR. GRAMY": "Nori\nRyż\nŁosoś\nspisi majo",
       "ALERGEN": "ryby, jaja",
       "UKR_NAZWA": "лосось w spicy mayo",
       "ENG_NAZWA": "salmon w spicy mayo",
@@ -1279,7 +1259,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "511-1f21e329.webp"
+      "IMAGE": "511.webp"
     },
     {
       "ID": "512",
@@ -1289,7 +1269,7 @@
       "WAGA DANIA": "70",
       "SZT": 2,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "Nori 0.2Ryż 40Węgorz 30spisi majo 5Masago 2terijaki sos 2",
+      "INGR. GRAMY": "Nori\nRyż\nWęgorz\nspisi majo\nMasago\nterijaki sos",
       "ALERGEN": "ryby, soja, jaja, gluten",
       "UKR_NAZWA": "вугор w spicy mayo",
       "ENG_NAZWA": "eel w spicy mayo",
@@ -1299,7 +1279,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "512-f3869e7d.webp"
+      "IMAGE": "512.webp"
     },
     {
       "ID": "513",
@@ -1309,7 +1289,7 @@
       "WAGA DANIA": "70",
       "SZT": 2,
       "CENA PLN": "25.00",
-      "INGR. GRAMY": "Nori 0.2Ryż 40Grill łosoś 30spisi majo 5Masago 2Sezam 2",
+      "INGR. GRAMY": "Nori\nRyż\nGrill łosoś\nspisi majo\nMasago\nSezam",
       "ALERGEN": "ryby, jaja, sezam",
       "UKR_NAZWA": "лосось w spicy mayo grill",
       "ENG_NAZWA": "salmon w spicy mayo grill",
@@ -1319,7 +1299,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "513-5064fb78.webp"
+      "IMAGE": "513.webp"
     },
     {
       "ID": "514",
@@ -1329,7 +1309,7 @@
       "WAGA DANIA": "70",
       "SZT": 2,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "Nori 0.2Ryż 40Krewetki  30spisi majo 5Masago 2",
+      "INGR. GRAMY": "Nori\nRyż\nKrewetki\nspisi majo\nMasago",
       "ALERGEN": "ryby, skorupiaki, jaja",
       "UKR_NAZWA": "креветки gotowane",
       "ENG_NAZWA": "shrimp gotowane",
@@ -1339,17 +1319,37 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "514-bc739153.webp"
+      "IMAGE": "514.webp"
+    },
+    {
+      "ID": "520",
+      "SORT_ORDER": 68,
+      "KATEGORIJA": "GUNKANY",
+      "NAZWA": "z glonami wakame",
+      "WAGA DANIA": "70",
+      "SZT": 2,
+      "CENA PLN": "15.00",
+      "INGR. GRAMY": "NORI\nglony wakame\ng sos orzechowy\ng, ryż\ng",
+      "ALERGEN": "",
+      "UKR_NAZWA": "",
+      "ENG_NAZWA": "",
+      "OPIS_PL": "",
+      "OPIS_UKR": "",
+      "OPIS_ENG": "",
+      "PROMO": false,
+      "%PROMO": 0,
+      "ACTIVE": true,
+      "IMAGE": "520.webp"
     },
     {
       "ID": "515",
-      "SORT_ORDER": 68,
-      "KATEGORIJA": "GUNKANY",
+      "SORT_ORDER": 69,
+      "KATEGORIJA": "NIGIRI",
       "NAZWA": "Nigiri z tuńczykiem",
       "WAGA DANIA": "70",
       "SZT": 2,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "Nori 0.2Ryż 40Tuńczyk 30spisi majo 5",
+      "INGR. GRAMY": "Nori\nRyż\nTuńczyk\nspisi majo",
       "ALERGEN": "ryby, jaja",
       "UKR_NAZWA": "Нігірі з тунцем",
       "ENG_NAZWA": "Nigiri z tuna",
@@ -1359,17 +1359,17 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "515-2339a7a2.webp"
+      "IMAGE": "515.webp"
     },
     {
       "ID": "516",
-      "SORT_ORDER": 69,
+      "SORT_ORDER": 70,
       "KATEGORIJA": "NIGIRI",
       "NAZWA": "Nigiri z łosiem surowym",
       "WAGA DANIA": "80",
       "SZT": 2,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "Ryż 40Łosoś 40",
+      "INGR. GRAMY": "Ryż\nŁosoś",
       "ALERGEN": "ryby",
       "UKR_NAZWA": "Нігірі з łosiem surowym",
       "ENG_NAZWA": "Nigiri z łosiem surowym",
@@ -1379,17 +1379,17 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "516-5c5d53e5.webp"
+      "IMAGE": "516.webp"
     },
     {
       "ID": "517",
-      "SORT_ORDER": 70,
+      "SORT_ORDER": 71,
       "KATEGORIJA": "NIGIRI",
       "NAZWA": "Nigiri z łosiem opalonym w teriyaki",
       "WAGA DANIA": "80",
       "SZT": 2,
       "CENA PLN": "22.00",
-      "INGR. GRAMY": "Ryż 40Łosoś 40terijaki sos 2",
+      "INGR. GRAMY": "Ryż\nŁosoś\nterijaki sos",
       "ALERGEN": "ryby, soja, gluten",
       "UKR_NAZWA": "Нігірі з łosiem opalonym w teriyaki",
       "ENG_NAZWA": "Nigiri z łosiem opalonym w teriyaki",
@@ -1399,17 +1399,17 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "517-b60ab281.webp"
+      "IMAGE": "517.webp"
     },
     {
       "ID": "518",
-      "SORT_ORDER": 71,
+      "SORT_ORDER": 72,
       "KATEGORIJA": "NIGIRI",
       "NAZWA": "Nigiri z węgorzem",
       "WAGA DANIA": "80",
       "SZT": 2,
       "CENA PLN": "25.00",
-      "INGR. GRAMY": "Ryż 40 Węgorz 30Unagi 5Sezam 1Nori 0.2",
+      "INGR. GRAMY": "Ryż\nWęgorz\nUnagi\nSezam\nNori",
       "ALERGEN": "ryby, sezam",
       "UKR_NAZWA": "Нігірі з вугрем",
       "ENG_NAZWA": "Nigiri z eel",
@@ -1419,17 +1419,17 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "518-b406657a.webp"
+      "IMAGE": "518.webp"
     },
     {
       "ID": "519",
-      "SORT_ORDER": 72,
+      "SORT_ORDER": 73,
       "KATEGORIJA": "NIGIRI",
       "NAZWA": "Nigiri z krewetkami",
       "WAGA DANIA": "80",
       "SZT": 2,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "Ryż 40Krewetki 40Sos spisi 2",
+      "INGR. GRAMY": "Ryż\nKrewetki\nSos spisi",
       "ALERGEN": "skorupiaki, jaja",
       "UKR_NAZWA": "Нігірі з креветкаmi",
       "ENG_NAZWA": "Nigiri z shrimpmi",
@@ -1439,27 +1439,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "519-f124d0a3.webp"
-    },
-    {
-      "ID": "520",
-      "SORT_ORDER": 73,
-      "KATEGORIJA": "NIGIRI",
-      "NAZWA": "Nigiri z tuńczykiem",
-      "WAGA DANIA": "80",
-      "SZT": 2,
-      "CENA PLN": "25.00",
-      "INGR. GRAMY": "Ryż 40Tuńczyk 40Sos spisi 2Szczypior 2",
-      "ALERGEN": "ryby, jaja",
-      "UKR_NAZWA": "Нігірі з тунцем",
-      "ENG_NAZWA": "Nigiri z tuna",
-      "OPIS_PL": "Nigiri z tuńczykiem — apetyczna kompozycja z tuńczyk, ryżem sushi i dodatkami, przygotowana na świeżo. Idealna propozycja na smaczny posiłek na wynos.",
-      "OPIS_UKR": "Нігірі з тунцем — апетитне поєднання: тунець, рис для суші та вдало підібрані додатки. Свіжо приготовлена страва, щоб насолодитися улюбленими смаками.",
-      "OPIS_ENG": "Nigiri z tuna — a delicious combination of tuna, sushi rice and complementary ingredients, freshly prepared for a satisfying takeaway meal.",
-      "PROMO": false,
-      "%PROMO": 20,
-      "ACTIVE": true,
-      "IMAGE": "520-c58dea4f.webp"
+      "IMAGE": "519.webp"
     },
     {
       "ID": "521",
@@ -1469,7 +1449,7 @@
       "WAGA DANIA": "70",
       "SZT": 2,
       "CENA PLN": "15.00",
-      "INGR. GRAMY": "Ryż 40awokado 30terijaki sos 2Sezam 2Nori 0.2",
+      "INGR. GRAMY": "Ryż\nawokado\nterijaki sos\nSezam\nNori",
       "ALERGEN": "soja, gluten, sezam",
       "UKR_NAZWA": "Нігірі з авокадо",
       "ENG_NAZWA": "Nigiri z avocado",
@@ -1479,7 +1459,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "521-e54ef3c3.webp"
+      "IMAGE": "521.webp"
     },
     {
       "ID": "522",
@@ -1489,7 +1469,7 @@
       "WAGA DANIA": "80",
       "SZT": 2,
       "CENA PLN": "15.00",
-      "INGR. GRAMY": "Ryż 40Tomago 40Nori 0.2",
+      "INGR. GRAMY": "Ryż\nTomago\nNori",
       "ALERGEN": "jaja",
       "UKR_NAZWA": "Нігірі з tamago",
       "ENG_NAZWA": "Nigiri z tamago",
@@ -1499,7 +1479,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "522-670c5375.webp"
+      "IMAGE": "522.webp"
     },
     {
       "ID": "523",
@@ -1509,7 +1489,7 @@
       "WAGA DANIA": "80",
       "SZT": 2,
       "CENA PLN": "15.00",
-      "INGR. GRAMY": "Ryż 40Tofu 30Kanpio 10Nori 0.2 ",
+      "INGR. GRAMY": "Ryż\nTofu\nKanpio\nNori",
       "ALERGEN": "soja",
       "UKR_NAZWA": "Нігірі з tofu wędзonym smażonym na chrupiąco",
       "ENG_NAZWA": "Nigiri z tofu wędzonym smażonym na chrupiąco",
@@ -1519,7 +1499,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "523-be200ad0.webp"
+      "IMAGE": "523.webp"
     },
     {
       "ID": "524",
@@ -1529,7 +1509,7 @@
       "WAGA DANIA": "50",
       "SZT": 1,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "wor. Inari 1Ryż 20Łosoś 20Serek 3Spisi majo 3Szczypior 1",
+      "INGR. GRAMY": "wor. Inari\nRyż\nŁosoś\nSerek\nSpisi majo\nSzczypior",
       "ALERGEN": "ryby, soja, mleko, jaja",
       "UKR_NAZWA": "лосось",
       "ENG_NAZWA": "salmon",
@@ -1539,7 +1519,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": "524-3cc26097.webp"
+      "IMAGE": "524.webp"
     },
     {
       "ID": "525",
@@ -1549,7 +1529,7 @@
       "WAGA DANIA": "50",
       "SZT": 1,
       "CENA PLN": "20.00",
-      "INGR. GRAMY": "wor. Inari 1Ryż 20Łosoś grill 20Serek 3Spisi majo 3Szczypior 1",
+      "INGR. GRAMY": "wor. Inari\nRyż\nŁosoś grill\nSerek\nSpisi majo\nSzczypior",
       "ALERGEN": "ryby, soja, mleko, jaja",
       "UKR_NAZWA": "лосось grill",
       "ENG_NAZWA": "salmon grill",
@@ -1559,7 +1539,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "525.webp"
     },
     {
       "ID": "526",
@@ -1569,7 +1549,7 @@
       "WAGA DANIA": "50",
       "SZT": 1,
       "CENA PLN": "21.00",
-      "INGR. GRAMY": "wor. Inari 1Ryż 20Tuńczyk 20Serek 3Spisi majo 3Szczypior 1",
+      "INGR. GRAMY": "wor. Inari\nRyż\nTuńczyk\nSerek\nSpisi majo\nSzczypior",
       "ALERGEN": "ryby, soja, mleko, jaja",
       "UKR_NAZWA": "тунець",
       "ENG_NAZWA": "tuna",
@@ -1579,7 +1559,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "526.webp"
     },
     {
       "ID": "527",
@@ -1589,7 +1569,7 @@
       "WAGA DANIA": "50",
       "SZT": 1,
       "CENA PLN": "25.00",
-      "INGR. GRAMY": "wor. Inari 1Ryż 20węgorz 20Serek 3Spisi majo 3Szczypior 1Unagi sos 2",
+      "INGR. GRAMY": "wor. Inari\nRyż\nwęgorz\nSerek\nSpisi majo\nSzczypior\nUnagi sos",
       "ALERGEN": "ryby, soja, mleko, jaja",
       "UKR_NAZWA": "вугор",
       "ENG_NAZWA": "eel",
@@ -1599,7 +1579,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "527.webp"
     },
     {
       "ID": "528",
@@ -1609,7 +1589,7 @@
       "WAGA DANIA": "50",
       "SZT": 1,
       "CENA PLN": "25.00",
-      "INGR. GRAMY": "wor. Inari 1Ryż 20Krewetki 20Serek 3Spisi majo 3Szczypior 1",
+      "INGR. GRAMY": "wor. Inari\nRyż\nKrewetki\nSerek\nSpisi majo\nSzczypior",
       "ALERGEN": "skorupiaki, soja, mleko, jaja",
       "UKR_NAZWA": "Інарі креветки",
       "ENG_NAZWA": "Inari shrimp",
@@ -1619,7 +1599,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "528.webp"
     },
     {
       "ID": "601",
@@ -1629,7 +1609,7 @@
       "WAGA DANIA": "300ml",
       "SZT": 1,
       "CENA PLN": "25.00",
-      "INGR. GRAMY": "miso bulion 300Tofu wędzone 10Szczypior 3Sezam 5Wakame 3Porcja czipsy ryżowe 5szt",
+      "INGR. GRAMY": "miso bulion\nTofu wędzone\nSzczypior\nSezam\nWakame\nPorcja czipsy ryżowe\nszt",
       "ALERGEN": "soja, sezam",
       "UKR_NAZWA": "Суп місо wege",
       "ENG_NAZWA": "Miso Soup wege",
@@ -1639,7 +1619,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "601.webp"
     },
     {
       "ID": "602",
@@ -1649,7 +1629,7 @@
       "WAGA DANIA": "300ml",
       "SZT": 1,
       "CENA PLN": "35.00",
-      "INGR. GRAMY": "miso bulion 300Tofu wędzone 10Szczypior 3Łosoś 50Sezam 5Wakame 3Porcja czipsy ryżowe 5szt",
+      "INGR. GRAMY": "miso bulion\nTofu wędzone\nSzczypior\nŁosoś\nSezam\nWakame\nPorcja czipsy ryżowe\nszt",
       "ALERGEN": "ryby, soja, sezam",
       "UKR_NAZWA": "Суп місо з лососем",
       "ENG_NAZWA": "Miso Soup z salmon",
@@ -1659,7 +1639,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "602.webp"
     },
     {
       "ID": "603",
@@ -1669,7 +1649,7 @@
       "WAGA DANIA": "300ml",
       "SZT": 1,
       "CENA PLN": "30.00",
-      "INGR. GRAMY": "miso bulion 300Tofu wędzone 10Kimchi 50Szczypior 3Sezam 5Wakame 3Porcja czipsy ryżowe 5szt",
+      "INGR. GRAMY": "miso bulion\nTofu wędzone\nKimchi\nSzczypior\nSezam\nWakame\nPorcja czipsy ryżowe\nszt",
       "ALERGEN": "soja, sezam, gorczyca",
       "UKR_NAZWA": "Суп місо з kimchi",
       "ENG_NAZWA": "Miso Soup z kimchi",
@@ -1679,7 +1659,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "603.webp"
     },
     {
       "ID": "604",
@@ -1689,7 +1669,7 @@
       "WAGA DANIA": "300ml",
       "SZT": 1,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "miso bulion 300Tofu wędzone 10Szczypior 3Krewetka 50Sezam 5Wakame 3Porcja czipsy ryżowe 5szt",
+      "INGR. GRAMY": "miso bulion\nTofu wędzone\nSzczypior\nKrewetka\nSezam\nWakame\nPorcja czipsy ryżowe\nszt",
       "ALERGEN": "skorupiaki, soja, sezam",
       "UKR_NAZWA": "Суп місо з креветкаmi",
       "ENG_NAZWA": "Miso Soup z shrimpmi",
@@ -1699,7 +1679,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "604.webp"
     },
     {
       "ID": "605",
@@ -1709,7 +1689,7 @@
       "WAGA DANIA": "300ml",
       "SZT": 1,
       "CENA PLN": "40.00",
-      "INGR. GRAMY": "miso bulion 300Tofu wędzone 10Szczypior 3węgorz 40Sezam 5Wakame 3Porcja czipsy ryżowe 5szt",
+      "INGR. GRAMY": "miso bulion\nTofu wędzone\nSzczypior\nwęgorz\nSezam\nWakame\nPorcja czipsy ryżowe\nszt",
       "ALERGEN": "ryby, soja, sezam",
       "UKR_NAZWA": "Суп місо з вугрем",
       "ENG_NAZWA": "Miso Soup z eel",
@@ -1719,7 +1699,7 @@
       "PROMO": false,
       "%PROMO": 20,
       "ACTIVE": true,
-      "IMAGE": ""
+      "IMAGE": "605.webp"
     }
   ]
 }
