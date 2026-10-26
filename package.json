@@ -1,0 +1,18 @@
+{
+  "name": "sushi-and-chill-menu",
+  "version": "2.0.0",
+  "private": true,
+  "description": "QR-menu SUSHI & CHILL: статичний сайт з prerender для SEO",
+  "type": "module",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "audit": "node tools/audit.mjs",
+    "serve": "python3 -m http.server 8000 --directory public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

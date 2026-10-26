@@ -1,4 +1,3 @@
+# Індексацію вимкнено (tools/site.config.json -> allowIndexing). Сторінки мають noindex.
 User-agent: *
 Allow: /
-
-Sitemap: https://sushichill.pl/sitemap.xml

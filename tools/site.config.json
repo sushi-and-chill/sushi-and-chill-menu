@@ -1,0 +1,27 @@
+{
+  "origin": "https://sushiandchill.pl",
+  "allowIndexing": false,
+
+  "name": "SUSHI & CHILL",
+  "phone": "+48666177775",
+  "phoneDisplay": "+48 666 177 775",
+  "street": "Stefana Czarnieckiego 15",
+  "city": "Wrocław",
+  "postalCode": "53-650",
+  "country": "PL",
+  "instagram": "https://www.instagram.com/sushi_and_chill_wroclaw_/",
+  "facebook": "https://www.facebook.com/people/SUSHI-CHILL-Wrocław/61595402925835/",
+  "mapsQuery": "Stefana Czarnieckiego 15, Wrocław, Polska",
+
+  "priceRange": "$$",
+  "openingHours": [
+  { "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "11:00", "closes": "22:00" }
+],
+
+  "legal": {
+    "companyName": "SUSHI & CHILL SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ",
+    "nip": "8971974849",
+    "address": "ul. STANISŁAWA LESZCZYŃSKIEGO 4/29 50-078 WROCŁAW",
+    "email": "sushi.and.chill.wroclaw@gmail.com"
+  }
+}

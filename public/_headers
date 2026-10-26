@@ -2,10 +2,21 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
+  Cross-Origin-Opener-Policy: same-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
 
+# Дані меню: короткий кеш і не індексувати JSON
 /data/*
   Cache-Control: public, max-age=300, must-revalidate
+  X-Robots-Tag: noindex
 
-/assets/*
-  Cache-Control: public, max-age=3600, must-revalidate
+# CSS/JS підключаються з ?v=<хеш вмісту>, тому кешуємо надовго
+/assets/css/*
+  Cache-Control: public, max-age=31536000, immutable
+/assets/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Фото й іконки: файли можуть замінюватися під тим самим іменем
+/assets/images/*
+  Cache-Control: public, max-age=86400, must-revalidate

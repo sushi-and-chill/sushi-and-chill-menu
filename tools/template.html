@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{TITLE}}</title>
+  <meta name="description" content="{{DESCRIPTION}}">
+  <meta name="robots" content="{{ROBOTS}}">
+  <link rel="canonical" href="{{CANONICAL}}">
+{{HREFLANGS}}
+  <meta name="theme-color" content="#151515">
+  <meta name="color-scheme" content="dark">
+
+  <meta property="og:site_name" content="SUSHI &amp; CHILL">
+  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{OG_DESCRIPTION}}">
+  <meta property="og:url" content="{{CANONICAL}}">
+  <meta property="og:image" content="{{OG_IMAGE}}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SUSHI &amp; CHILL — logo">
+  <meta property="og:locale" content="{{OG_LOCALE}}">
+{{OG_ALTERNATES}}
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+
+  <script type="application/ld+json" id="structured-data">{{JSONLD}}</script>
+
+  <link rel="stylesheet" href="/assets/css/style.css?v={{CSS_VERSION}}">
+  <script src="/assets/js/i18n.js?v={{I18N_VERSION}}" defer></script>
+  <script src="/assets/js/app.js?v={{JS_VERSION}}" defer></script>
+</head>
+
+<body{{BODY_ATTRS}}>
+  <a class="skip-link" href="#menu-content" data-i18n="skip"></a>
+
+  <header class="site-header">
+    <div class="brand">
+      <img class="brand-logo" src="/assets/images/logo-small.png" alt="" width="78" height="44">
+      <div>
+        <a class="brand-name" href="{{HOME_PATH}}" aria-label="SUSHI &amp; CHILL">SUSHI <span>&amp;</span> CHILL</a>
+        <p class="tagline" data-i18n="tagline"></p>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <a class="phone-link" href="tel:{{PHONE}}">{{PHONE_DISPLAY}}</a>
+
+      <nav class="social-links" data-i18n-label="contact">
+        <a href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">Instagram</a>
+{{FACEBOOK_LINK}}
+        <a href="{{MAPS_URL}}" target="_blank" rel="noopener noreferrer">Google Maps</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="menu-heading">
+      <div>
+        <p class="eyebrow" data-i18n="address"></p>
+        <h1 data-i18n="title"></h1>
+        <p class="muted" data-i18n="description"></p>
+      </div>
+
+      <nav class="language-switch" data-i18n-label="language">
+{{LANG_LINKS}}
+      </nav>
+    </section>
+
+    <p class="notice" data-i18n="spicyNote"></p>
+
+    <p class="info-line" data-i18n="infoLine"></p>
+    <details class="allergen-info">
+      <summary data-i18n="allergenSummary"></summary>
+      <p data-i18n="allergenNote"></p>
+      <p><strong data-i18n="allergenListTitle"></strong> <span data-i18n="allergenList"></span></p>
+    </details>
+
+    <div class="search-box" role="search">
+      <input id="menu-search" type="search" inputmode="search" autocomplete="off" enterkeyhint="search" data-i18n-placeholder="search" data-i18n-label="search">
+    </div>
+    <p class="sr-only" id="result-status" role="status" aria-live="polite"></p>
+
+    <nav id="category-navigation" class="category-navigation" data-i18n-label="categories"></nav>
+
+    <section id="menu-content" class="menu-content" aria-busy="true"></section>
+    <noscript><p class="status-message" data-i18n="noscript"></p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>SUSHI &amp; CHILL</strong></p>
+    <p data-i18n="tagline"></p>
+    <p data-i18n="address"></p>
+    <p><a href="tel:{{PHONE}}">{{PHONE_DISPLAY}}</a></p>
+{{LEGAL_FOOTER}}
+  </footer>
+
+  <button type="button" class="to-top" id="to-top" data-i18n-label="toTop" data-i18n-title="toTop">&uarr;</button>
+</body>
+</html>
