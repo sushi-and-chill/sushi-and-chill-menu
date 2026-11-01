@@ -113,7 +113,7 @@ window.QR_I18N = {
     language: "Language",
     address: "Wrocław, Stefana Czarnieckiego 15",
     title: "Sushi menu in Wrocław",
-    description: "Can't find your perfect combination on our menu? Give us a call! We'll be happy to create a custom roll or sushi set just the way you like it, with your favorite ingredients and flavors!",
+    description: "Choose a category and explore our menu.",
     spicyNote: "Any dish can be made spicy on request +2 zł",
     friedNote: "All futomaki can be ordered fried on request +3 zł",
     infoLine: "Prices in zł, VAT included. Photos are illustrative.",
