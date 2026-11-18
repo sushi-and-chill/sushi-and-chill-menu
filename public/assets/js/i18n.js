@@ -12,7 +12,7 @@ window.QR_I18N = {
     langName: "Polski",
     path: "/menu/",
     // <head>
-    pageTitle: "Menu sushi Wrocław — ceny i alergeny | SUSHI & CHILL",
+    pageTitle: "Menu sushi — ceny i alergeny | SUSHI & CHILL",
     metaDescription:
       "Menu SUSHI & CHILL we Wrocławiu: sushi burgery, futomaki, uromaki, hosomaki, nigiri, zestawy i zupy miso. Ceny, gramatura i alergeny. Stefana Czarnieckiego 15.",
     ogDescription: "Sushi we Wrocławiu. Smak, o którym będziesz marzyć cały czas.",
@@ -22,14 +22,18 @@ window.QR_I18N = {
     contact: "Kontakt",
     language: "Język",
     address: "Wrocław, Stefana Czarnieckiego 15",
-    title: "Menu sushi we Wrocławiu",
-    description: "Nie znalazłeś idealnego połączenia w naszym menu? Zadzwoń do nas, a z przyjemnością przygotujemy rolkę lub zestaw według Twoich upodobań — z wybranych przez Ciebie składników i smaków!",
+    title: "Menu SUSHI & CHILL",
+    description: `Tworzymy własną markę sushi, stawiając na jakość, świeżość składników i wyjątkowy smak. Każde zamówienie przygotowujemy z dbałością o szczegóły, ponieważ zależy nam nie tylko na pysznym sushi, ale przede wszystkim na zadowoleniu naszych klientów.
+Oferujemy smaczne sushi na wynos i z dostawą. Cenimy zaufanie, dlatego każdego dnia staramy się, aby nasi goście chętnie do nas wracali.
+Nie znalazłeś idealnego połączenia w naszym menu? Zadzwoń do nas, a z przyjemnością przygotujemy rolkę lub zestaw według Twoich upodobań — z wybranych przez Ciebie składników i smaków!`,
     spicyNote: "Wszystkie dania mogą być na ostro na życzenie +2 zł",
-    friedNote: "Wszystkie futomaki mogą być w wersji smażonej na życzenie +3 zł",
+    friedNote: "",
     infoLine: "Ceny brutto w zł. Zdjęcia mają charakter poglądowy.",
     allergenSummary: "Alergie pokarmowe — ważne informacje",
     allergenNote:
-      "Masz alergię lub nietolerancję? Poinformuj obsługę przed złożeniem zamówienia. Przy każdej potrawie podajemy alergeny wynikające z receptury; nie można wykluczyć śladowych ilości innych alergenów (ryzyko zanieczyszczenia krzyżowego).",
+      "Informacje o alergenach należy każdorazowo potwierdzić na podstawie aktualnej receptury i specyfikacji użytych produktów. Jeśli masz alergię lub nietolerancję, skontaktuj się z obsługą przed złożeniem zamówienia.",
+    ingredientNotice:
+      "Lista składników przy daniach jest skróconą listą składników.",
     allergenListTitle: "14 alergenów wg rozporządzenia UE 1169/2011:",
     allergenList:
       "zboża zawierające gluten, skorupiaki, jaja, ryby, orzeszki ziemne, soja, mleko, orzechy (np. migdały, laskowe, włoskie), seler, gorczyca, sezam, dwutlenek siarki i siarczyny, łubin, mięczaki.",
@@ -47,10 +51,15 @@ window.QR_I18N = {
     ml: "ml",
     ingredients: "Składniki",
     allergens: "Alergeny",
-    noAllergens: "brak wg receptury",
+    mayContain: "Możliwa obecność",
+    noAllergens: "nie wskazano",
     currency: "zł",
     footerLegalName: "Dane firmy",
     nip: "NIP",
+    shareCapital: "Kapitał zakładowy:",
+    hoursTitle: "Godziny otwarcia",
+    daily: "Codziennie",
+    days: ["Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela"],
   },
 
   uk: {
@@ -67,14 +76,19 @@ window.QR_I18N = {
     contact: "Контакти",
     language: "Мова",
     address: "Вроцлав, Stefana Czarnieckiego 15",
-    title: "Меню суші у Вроцлаві",
-    description: "Не знайшли ідеального поєднання в меню? Зателефонуйте нам, і ми з радістю скомпонуємо рол або сет індивідуально — саме з тих інгредієнтів та смаків, які вам до вподоби!",
+    title: "Меню SUSHI & CHILL",
+    description: `Ми створюємо власний бренд суші, приділяючи особливу увагу якості, свіжості інгредієнтів та винятковому смаку.
+    Готуємо кожне замовлення з увагою до найдрібніших деталей, адже для нас важливі не лише смачні суші, а насамперед задоволення наших клієнтів.
+    Ми пропонуємо смачні суші на винос та з доставкою. Ми цінуємо вашу довіру, тому щодня прагнемо, щоб наші гості із задоволенням поверталися до нас.
+    Не можете знайти ідеальне поєднання в нашому меню? Зателефонуйте нам, і ми з радістю приготуємо для вас рол або сет`,
     spicyNote: "Усі страви можна замовити гострими за бажанням +2 zł",
-    friedNote: "Усі футомакі можна замовити в смаженому вигляді +3 zł",
+    friedNote: "",
     infoLine: "Ціни брутто, у zł. Фото мають ілюстративний характер.",
     allergenSummary: "Харчова алергія — важлива інформація",
     allergenNote:
-      "Маєте алергію або непереносимість? Повідомте персонал до замовлення. Біля кожної страви ми вказуємо алергени за рецептурою; сліди інших алергенів виключити не можна (ризик перехресного забруднення).",
+      "Інформацію про алергени необхідно щоразу перевіряти за актуальною рецептурою та специфікаціями використаних продуктів. Якщо маєте алергію або непереносимість, зв’яжіться з персоналом до оформлення замовлення.",
+    ingredientNotice:
+      "Список інгредієнтів до страв — це скорочений перелік інгредієнтів.",
     allergenListTitle: "14 алергенів за регламентом ЄС 1169/2011:",
     allergenList:
       "злаки з глютеном, ракоподібні, яйця, риба, арахіс, соя, молоко, горіхи (мигдаль, фундук, волоський тощо), селера, гірчиця, кунжут, діоксид сірки та сульфіти, люпин, молюски.",
@@ -90,12 +104,17 @@ window.QR_I18N = {
     pieces: "шт.",
     grams: "г",
     ml: "мл",
-    ingredients: "Склад",
+    ingredients: "Складники",
     allergens: "Алергени",
-    noAllergens: "немає за рецептурою",
+    mayContain: "Можлива присутність",
+    noAllergens: "не зазначено",
     currency: "zł",
     footerLegalName: "Дані компанії",
     nip: "NIP",
+    shareCapital: "Статутний капітал:",
+    hoursTitle: "Графік роботи",
+    daily: "Щодня",
+    days: ["Понеділок", "Вівторок", "Середа", "Четвер", "Пʼятниця", "Субота", "Неділя"],
   },
 
   en: {
@@ -103,7 +122,7 @@ window.QR_I18N = {
     ogLocale: "en_GB",
     langName: "English",
     path: "/menu/en/",
-    pageTitle: "Sushi menu Wrocław — prices & allergens | SUSHI & CHILL",
+    pageTitle: "Sushi menu Wroclaw — prices & allergens | SUSHI & CHILL",
     metaDescription:
       "SUSHI & CHILL menu in Wrocław: sushi burgers, futomaki, uramaki, hosomaki, nigiri, sets and miso soups. Prices, weights and allergens. Stefana Czarnieckiego 15.",
     ogDescription: "Sushi in Wrocław. A taste you will keep dreaming about.",
@@ -112,14 +131,18 @@ window.QR_I18N = {
     contact: "Contact",
     language: "Language",
     address: "Wrocław, Stefana Czarnieckiego 15",
-    title: "Sushi menu in Wrocław",
-    description: "Choose a category and explore our menu.",
+    title: "SUSHI & CHILL Menu",
+    description: `We’re building our own sushi brand, focusing on quality, fresh ingredients, and exceptional flavor. We prepare every order with attention to detail, because we care not only about delicious sushi, but above all about our customers’ satisfaction.
+We offer delicious sushi for takeout and delivery. We value your trust, which is why we strive every day to ensure our guests are happy to return.
+Can’t find the perfect combination on our menu? Give us a call, and we’ll be happy to prepare a roll or set for you`,
     spicyNote: "Any dish can be made spicy on request +2 zł",
-    friedNote: "All futomaki can be ordered fried on request +3 zł",
+    friedNote: "",
     infoLine: "Prices in zł, VAT included. Photos are illustrative.",
     allergenSummary: "Food allergies — important information",
     allergenNote:
-      "Have an allergy or intolerance? Tell our staff before you order. Each dish lists the allergens in its recipe; traces of other allergens cannot be ruled out (cross-contamination risk).",
+      "Allergen information must be checked against the current recipe and specifications for the products used. If you have an allergy or intolerance, contact our staff before ordering.",
+    ingredientNotice:
+      "The list of ingredients for dishes is a condensed list of ingredients.",
     allergenListTitle: "The 14 allergens under EU Regulation 1169/2011:",
     allergenList:
       "cereals containing gluten, crustaceans, eggs, fish, peanuts, soybeans, milk, tree nuts (e.g. almonds, hazelnuts, walnuts), celery, mustard, sesame, sulphur dioxide and sulphites, lupin, molluscs.",
@@ -135,11 +158,16 @@ window.QR_I18N = {
     pieces: "pcs",
     grams: "g",
     ml: "ml",
-    ingredients: "Ingredients",
+    ingredients: "Selected ingredients",
     allergens: "Allergens",
-    noAllergens: "none per recipe",
+    mayContain: "Possible presence",
+    noAllergens: "not specified in the data",
     currency: "zł",
     footerLegalName: "Company details",
     nip: "NIP",
+    shareCapital: "Share capital:",
+    hoursTitle: "Opening hours",
+    daily: "Every day",
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
   },
 };

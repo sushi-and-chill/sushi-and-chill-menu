@@ -9,11 +9,11 @@
   <meta name="robots" content="{{ROBOTS}}">
   <link rel="canonical" href="{{CANONICAL}}">
 {{HREFLANGS}}
-  <meta name="theme-color" content="#151515">
+  <meta name="theme-color" content="#000000">
   <meta name="color-scheme" content="dark">
 
   <meta property="og:site_name" content="SUSHI &amp; CHILL">
-  <meta property="og:type" content="restaurant.menu">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="{{TITLE}}">
   <meta property="og:description" content="{{OG_DESCRIPTION}}">
   <meta property="og:url" content="{{CANONICAL}}">
@@ -24,7 +24,11 @@
   <meta property="og:locale" content="{{OG_LOCALE}}">
 {{OG_ALTERNATES}}
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{OG_DESCRIPTION}}">
+  <meta name="twitter:image" content="{{OG_IMAGE}}">
 
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
   <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/favicon-192.png">
   <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
 
@@ -48,12 +52,12 @@
     </div>
 
     <div class="header-actions">
-      <a class="phone-link" href="tel:{{PHONE}}">{{PHONE_DISPLAY}}</a>
+      <a class="phone-link" href="tel:{{PHONE}}">{{ICON_PHONE}}<span>{{PHONE_DISPLAY}}</span></a>
 
       <nav class="social-links" data-i18n-label="contact">
-        <a href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a class="social-link" href="{{INSTAGRAM}}" target="_blank" rel="noopener noreferrer">{{ICON_INSTAGRAM}}<span class="btn-label">Instagram</span></a>
 {{FACEBOOK_LINK}}
-        <a href="{{MAPS_URL}}" target="_blank" rel="noopener noreferrer">Google Maps</a>
+        <a class="social-link" href="{{MAPS_URL}}" target="_blank" rel="noopener noreferrer">{{ICON_MAPS}}<span class="btn-label">Google Maps</span></a>
       </nav>
     </div>
   </header>
@@ -73,6 +77,7 @@
 
     <p class="notice" data-i18n="spicyNote"></p>
 
+    <p class="info-line" data-i18n="ingredientNotice"></p>
     <p class="info-line" data-i18n="infoLine"></p>
     <details class="allergen-info">
       <summary data-i18n="allergenSummary"></summary>
@@ -96,6 +101,7 @@
     <p data-i18n="tagline"></p>
     <p data-i18n="address"></p>
     <p><a href="tel:{{PHONE}}">{{PHONE_DISPLAY}}</a></p>
+{{HOURS_FOOTER}}
 {{LEGAL_FOOTER}}
   </footer>
 

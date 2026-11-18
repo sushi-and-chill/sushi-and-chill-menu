@@ -9,10 +9,14 @@
  * збігається готовий HTML із data/menu.json, і лише тоді вмикає пошук тощо.
  *
  * Мова сторінки береться з <html lang>. Тексти інтерфейсу: assets/js/i18n.js.
+ * Коментарі до категорій: data/category-notes.json (порожнє поле = не показується).
  */
 (function () {
   const MENU_URL = "/data/menu.json";
+  const NOTES_URL = "/data/category-notes.json";
   const IMAGE_BASE = "/assets/images/menu/";
+  // Ширина фото в картці: 1 колонка / 2 колонки / 2 колонки в контейнері 960px.
+  const PHOTO_SIZES = "(min-width: 960px) 426px, (min-width: 640px) calc(50vw - 56px), calc(100vw - 66px)";
   const STORAGE_KEY = "qr-menu-language";
   const DEFAULT_LANGUAGE = "pl";
   const EAGER_IMAGES = 2; // перші фото вантажимо одразу (LCP)
@@ -59,15 +63,18 @@
   };
 
   let menuItems = [];
+  let categoryNotes = new Map();
   let searchTerm = "";
+  let loadPromise = null;
+  const photoMetaByUrl = new Map(); // src -> { w, h, srcset } зі згенерованого HTML
 
-  /* ---------- Алергени (14 основних, джерело даних — польською) ---------- */
+  /* ---------- Алергени: нормалізація без здогадок ---------- */
 
   const ALLERGEN_TERMS = {
     ryby: { pl: "ryby", uk: "риба", en: "fish" },
-    soja: { pl: "soja", uk: "соя", en: "soy" },
+    soja: { pl: "soja", uk: "соя", en: "soybeans" },
     mleko: { pl: "mleko", uk: "молоко", en: "milk" },
-    gluten: { pl: "gluten", uk: "глютен", en: "gluten" },
+    gluten: { pl: "zboża zawierające gluten", uk: "злаки, що містять глютен", en: "cereals containing gluten" },
     jaja: { pl: "jaja", uk: "яйця", en: "eggs" },
     sezam: { pl: "sezam", uk: "кунжут", en: "sesame" },
     skorupiaki: { pl: "skorupiaki", uk: "ракоподібні", en: "crustaceans" },
@@ -75,42 +82,54 @@
     gorczyca: { pl: "gorczyca", uk: "гірчиця", en: "mustard" },
     seler: { pl: "seler", uk: "селера", en: "celery" },
     "łubin": { pl: "łubin", uk: "люпин", en: "lupin" },
-    siarczyny: { pl: "siarczyny", uk: "сульфіти", en: "sulphites" },
+    siarczyny: { pl: "dwutlenek siarki i siarczyny", uk: "діоксид сірки та сульфіти", en: "sulphur dioxide and sulphites" },
+    "dwutlenek siarki i siarczyny": { pl: "dwutlenek siarki i siarczyny", uk: "діоксид сірки та сульфіти", en: "sulphur dioxide and sulphites" },
     "dwutlenek siarki": { pl: "dwutlenek siarki", uk: "діоксид сірки", en: "sulphur dioxide" },
-    "orzeszki ziemne / orzechy": {
-      pl: "orzeszki ziemne / orzechy",
-      uk: "арахіс / горіхи",
-      en: "peanuts / nuts",
-    },
+    "orzeszki ziemne": { pl: "orzeszki ziemne", uk: "арахіс", en: "peanuts" },
+    orzechy: { pl: "orzechy (należy wskazać rodzaj)", uk: "горіхи (потрібно вказати вид)", en: "tree nuts (specify the type)" },
+    "soje": { pl: "soja", uk: "соя", en: "soybeans" },
+    "soję": { pl: "soja", uk: "соя", en: "soybeans" },
+    "gorczycę": { pl: "gorczyca", uk: "гірчиця", en: "mustard" },
+    "orzeszki ziemne / orzechy": { pl: "orzeszki ziemne / orzechy (zapis niejednoznaczny)", uk: "арахіс / горіхи (неоднозначний запис)", en: "peanuts / tree nuts (ambiguous source entry)" },
   };
-  // Варіанти написання, які трапляються в таблиці.
-  ALLERGEN_TERMS["orzechy ziemne"] = ALLERGEN_TERMS["orzeszki ziemne / orzechy"];
-  ALLERGEN_TERMS["orzeszki ziemne"] = ALLERGEN_TERMS["orzeszki ziemne / orzechy"];
-  ALLERGEN_TERMS["orzechy"] = ALLERGEN_TERMS["orzeszki ziemne / orzechy"];
 
   const NO_ALLERGEN_MARKS = new Set(["—", "–", "-", "brak", "none", "немає"]);
 
-  function formatAllergens(text) {
-    const raw = textValue(text);
+  function canonicalAllergen(value) {
+    const key = value.trim().toLocaleLowerCase("pl-PL").replace(/[.!;:]+$/g, "").replace(/\s+/g, " ");
+    if (key === "soje" || key === "soję") return "soja";
+    if (key === "gorczycę") return "gorczyca";
+    return key;
+  }
 
-    if (!raw) {
-      return "";
-    }
+  function parseAllergenData(value) {
+    const raw = textValue(value).replace(/\r/g, "").replace(/\n/g, ",");
+    if (!raw) return { declared: [], mayContain: [], unspecified: true };
 
-    if (NO_ALLERGEN_MARKS.has(raw.toLowerCase())) {
-      return labels.noAllergens;
-    }
+    const marker = /może\s+zawierać\s*:?|moze\s+zawierac\s*:?/i;
+    const match = raw.match(marker);
+    const declaredText = match ? raw.slice(0, match.index) : raw;
+    const mayContainText = match ? raw.slice(match.index + match[0].length) : "";
+    const split = (text) => text.split(/[,;]+/).map(canonicalAllergen).filter(Boolean);
+    const declared = split(declaredText);
+    const mayContain = split(mayContainText);
+    const onlyDash = declared.length === 1 && NO_ALLERGEN_MARKS.has(declared[0].toLowerCase());
 
-    return raw
-      .split(",")
-      .map((part) => {
-        const clean = part.trim();
-        const entry = ALLERGEN_TERMS[clean.toLowerCase()];
+    return {
+      declared: onlyDash ? [] : declared,
+      mayContain,
+      unspecified: onlyDash || declared.length === 0,
+    };
+  }
 
-        return entry ? entry[currentLanguage] : clean;
-      })
-      .filter(Boolean)
-      .join(", ");
+  function translateAllergen(value) {
+    const key = canonicalAllergen(value);
+    const entry = ALLERGEN_TERMS[key];
+    return entry ? entry[currentLanguage] : value.trim();
+  }
+
+  function formatAllergenList(values) {
+    return values.map(translateAllergen).filter(Boolean).join(", ");
   }
 
   /* ---------- Допоміжні функції ---------- */
@@ -196,7 +215,8 @@
     );
   }
 
-  function hashString(text) {
+  function hashString(rawText) {
+    const text = rawText.replace(/\r/g, "");
     let hash = 5381;
 
     for (let i = 0; i < text.length; i += 1) {
@@ -320,7 +340,7 @@
         item[f.price] !== undefined ? item[f.price] : item.CENA_PLN
       ),
       ingredientNames: parseIngredientNames(textValue(item[f.ingredients])),
-      allergens: textValue(item[f.allergens]),
+      allergens: parseAllergenData(item[f.allergens]),
       active: isActive(item[f.active]),
       sortOrder: numberValue(item[f.sortOrder]) || 0,
       photo: textValue(item[f.photo]) || textValue(item[f.photoLegacy]),
@@ -405,6 +425,60 @@
     );
   }
 
+  /* ---------- Коментарі до категорій ---------- */
+
+  /*
+   * category-notes.json: { "НАЗВА КАТЕГОРІЇ": { "pl": "", "uk": "", "en": "" } }.
+   * Ключі, що починаються з "_", ігноруються. Порожній текст = коментаря немає.
+   */
+  function parseNotes(raw) {
+    const notes = new Map();
+    let data;
+
+    try {
+      data = JSON.parse(raw);
+    } catch (error) {
+      return notes;
+    }
+
+    if (!data || typeof data !== "object") {
+      return notes;
+    }
+
+    for (const key of Object.keys(data)) {
+      if (key.charAt(0) === "_") {
+        continue;
+      }
+
+      const value = data[key];
+      const entry =
+        typeof value === "string" ? { pl: value, uk: value, en: value } : value;
+
+      if (!entry || typeof entry !== "object") {
+        continue;
+      }
+
+      notes.set(inlineText(key).toLowerCase(), {
+        pl: textValue(entry.pl),
+        uk: textValue(entry.uk),
+        en: textValue(entry.en),
+      });
+    }
+
+    return notes;
+  }
+
+  function getCategoryNote(category) {
+    const entry = categoryNotes.get(category.toLowerCase());
+
+    if (!entry) {
+      return "";
+    }
+
+    // Порожня мова → польський текст, потім англійський, потім український.
+    return entry[currentLanguage] || entry.pl || entry.en || entry.uk || "";
+  }
+
   /* ---------- Пошук ---------- */
 
   /* Без урахування регістру та діакритики (ł -> l). */
@@ -484,6 +558,41 @@
     return BUILD && BUILD.photoExists ? list.filter(BUILD.photoExists) : list;
   }
 
+  /* Розміри й srcset фото: під час збірки — з файлів, у браузері — з готового HTML. */
+  function harvestPhotos() {
+    for (const img of elements.content.querySelectorAll("img.item-photo")) {
+      const src = img.getAttribute("src");
+
+      if (src && !photoMetaByUrl.has(src)) {
+        photoMetaByUrl.set(src, {
+          w: Number(img.getAttribute("width")) || 0,
+          h: Number(img.getAttribute("height")) || 0,
+          srcset: img.getAttribute("srcset") || "",
+        });
+      }
+    }
+  }
+
+  function getPhotoMeta(src) {
+    if (BUILD && BUILD.photoMeta) {
+      const meta = BUILD.photoMeta(src.split("?")[0]);
+
+      if (!meta) {
+        return null;
+      }
+
+      return {
+        w: meta.w,
+        h: meta.h,
+        srcset: meta.small
+          ? `${meta.small.src} ${meta.small.w}w, ${src} ${meta.w}w`
+          : "",
+      };
+    }
+
+    return photoMetaByUrl.get(src) || null;
+  }
+
   /* ---------- Рендер ---------- */
 
   function renderIngredients(item, card) {
@@ -508,18 +617,29 @@
     const photoCandidates = getPhotoCandidates(item);
 
     if (photoCandidates.length > 0) {
+      const holder = createElement("div", "photo-frame");
       const image = createElement("img", "item-photo");
+      const meta = getPhotoMeta(photoCandidates[0]);
       let attempt = 0;
 
       // setAttribute (а не властивості), щоб атрибути потрапили в prerender-HTML.
+      // Справжні розміри фото потрібні, щоб воно не обрізалось і сторінка не «стрибала».
       image.setAttribute("alt", getItemName(item));
-      image.setAttribute("width", "1200");
-      image.setAttribute("height", "670");
+      image.setAttribute("width", String(meta && meta.w ? meta.w : 1200));
+      image.setAttribute("height", String(meta && meta.h ? meta.h : 670));
       image.setAttribute("decoding", "async");
+
+      if (meta && meta.srcset) {
+        image.setAttribute("srcset", meta.srcset);
+        image.setAttribute("sizes", PHOTO_SIZES);
+      }
 
       if (imageIndex < EAGER_IMAGES) {
         image.setAttribute("loading", "eager");
-        image.setAttribute("fetchpriority", "high");
+
+        if (imageIndex === 0) {
+          image.setAttribute("fetchpriority", "high");
+        }
       } else {
         image.setAttribute("loading", "lazy");
       }
@@ -528,14 +648,17 @@
         attempt += 1;
 
         if (attempt < photoCandidates.length) {
+          image.removeAttribute("srcset");
+          image.removeAttribute("sizes");
           image.setAttribute("src", photoCandidates[attempt]);
         } else {
-          image.remove();
+          holder.remove();
         }
       });
 
       image.setAttribute("src", photoCandidates[0]);
-      card.append(image);
+      holder.append(image);
+      card.append(holder);
     }
 
     card.append(createElement("h3", "item-name", getItemName(item)));
@@ -564,16 +687,25 @@
 
     renderIngredients(item, card);
 
-    const allergenText = formatAllergens(item.allergens);
+    const declaredText = formatAllergenList(item.allergens.declared);
+    const mayContainText = formatAllergenList(item.allergens.mayContain);
 
-    if (allergenText) {
+    if (declaredText || item.allergens.unspecified) {
       const allergens = createElement("p", "item-allergens");
-
       allergens.append(
         createElement("strong", "allergen-label", labels.allergens + ":"),
-        document.createTextNode(" " + allergenText)
+        document.createTextNode(" " + (declaredText || labels.noAllergens))
       );
       card.append(allergens);
+    }
+
+    if (mayContainText) {
+      const mayContain = createElement("p", "item-allergens item-may-contain");
+      mayContain.append(
+        createElement("strong", "allergen-label", labels.mayContain + ":"),
+        document.createTextNode(" " + mayContainText)
+      );
+      card.append(mayContain);
     }
 
     const hasPromo =
@@ -667,6 +799,12 @@
       title.id = sectionId + "-title";
       section.append(title);
 
+      const note = getCategoryNote(category);
+
+      if (note) {
+        section.append(createElement("p", "category-comment", note));
+      }
+
       if (/^futomaki/i.test(category)) {
         section.append(createElement("p", "notice category-notice", labels.friedNote));
       }
@@ -709,6 +847,13 @@
             name: item.category,
             hasMenuItem: [],
           };
+
+          const note = getCategoryNote(item.category);
+
+          if (note) {
+            byCategory[item.category].description = note;
+          }
+
           sections.push(byCategory[item.category]);
         }
 
@@ -799,32 +944,45 @@
 
   /* ---------- Завантаження ---------- */
 
+  async function fetchText(url, optional) {
+    const response = await fetch(url, {
+      cache: "no-cache",
+      headers: { Accept: "application/json" },
+      priority: "low",
+    });
+
+    if (!response.ok) {
+      if (optional) {
+        return "";
+      }
+
+      throw new Error(`Request failed: ${url} HTTP ${response.status}`);
+    }
+
+    return response.text();
+  }
+
   async function loadMenu() {
     const alreadyRendered = Boolean(
       elements.content.querySelector(".category-section")
     );
 
-    elements.content.setAttribute("aria-busy", "true");
-
     if (!alreadyRendered) {
+      elements.content.setAttribute("aria-busy", "true");
       showMessage("status-message", labels.loading);
     }
 
     try {
-      const response = await fetch(MENU_URL, {
-        cache: "no-cache",
-        headers: { Accept: "application/json" },
-      });
-
-      if (!response.ok) {
-        throw new Error(`Menu request failed: HTTP ${response.status}`);
-      }
-
-      const text = await response.text();
+      // Коментарі до категорій необов'язкові: помилка їх завантаження меню не ламає.
+      const [text, notesText] = await Promise.all([
+        fetchText(MENU_URL, false),
+        fetchText(NOTES_URL, true).catch(() => ""),
+      ]);
 
       menuItems = normalizeMenu(JSON.parse(text));
+      categoryNotes = parseNotes(notesText);
 
-      const menuHash = hashString(text) + "-" + currentLanguage;
+      const menuHash = hashString(text + "\u0000" + notesText) + "-" + currentLanguage;
       const upToDate =
         alreadyRendered &&
         elements.content.getAttribute("data-menu-hash") === menuHash;
@@ -843,6 +1001,31 @@
       }
     } finally {
       elements.content.setAttribute("aria-busy", "false");
+    }
+  }
+
+  function ensureLoaded() {
+    if (!loadPromise) {
+      loadPromise = loadMenu();
+    }
+
+    return loadPromise;
+  }
+
+  /* Перевірку актуальності меню робимо після завантаження сторінки, у вільний момент. */
+  function whenIdle(callback) {
+    const run = () => {
+      if (window.requestIdleCallback) {
+        window.requestIdleCallback(callback, { timeout: 3000 });
+      } else {
+        window.setTimeout(callback, 1200);
+      }
+    };
+
+    if (document.readyState === "complete") {
+      run();
+    } else {
+      window.addEventListener("load", run, { once: true });
     }
   }
 
@@ -970,11 +1153,14 @@
       return Promise.resolve();
     }
 
+    harvestPhotos();
+
     let searchTimer = 0;
 
     elements.search.addEventListener("input", () => {
       window.clearTimeout(searchTimer);
-      searchTimer = window.setTimeout(() => {
+      searchTimer = window.setTimeout(async () => {
+        await ensureLoaded();
         searchTerm = normalizeSearch(elements.search.value.trim());
         renderMenu();
       }, 180);
@@ -982,7 +1168,7 @@
 
     window.addEventListener("scroll", () => {
       elements.toTop.classList.toggle("is-visible", window.pageYOffset > 600);
-    });
+    }, { passive: true });
 
     elements.toTop.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: prefersReducedMotion() ? "auto" : "smooth" });
@@ -990,7 +1176,14 @@
 
     initNavigationScroll();
 
-    return loadMenu();
+    // Під час збірки та без готового HTML вантажимо одразу; інакше — у вільний момент.
+    if (BUILD || !elements.content.querySelector(".category-section")) {
+      return ensureLoaded();
+    }
+
+    whenIdle(ensureLoaded);
+
+    return Promise.resolve();
   }
 
   window.QR_MENU = { ready: start() };

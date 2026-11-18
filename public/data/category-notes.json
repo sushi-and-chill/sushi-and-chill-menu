@@ -1,0 +1,63 @@
+{
+  "_help": "Коментар до категорії: впишіть текст у pl / uk / en (назва категорії має збігатися з KATEGORIJA в меню). Порожнє поле = коментар не показується. Якщо заповнено лише pl, на інших мовах покажеться він. Новий рядок — через \\n. Після змін: npm run build.",
+  "SUSHI BURGER": {
+    "pl": "Na życzenie sushi burger można podać na surowo za dodatkową opłatą w wysokości 2 zł,",
+    "uk": "Бургер суші може бути не смажений на бажання +2 zł",
+    "en": "The sushi burger can be served uncooked upon request for an additional 2 zł"
+  },
+  "WEGE": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "ZESTAWY": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "FUTOMAKI": {
+    "pl": "Wszystkie futomaki mogą być w wersji smażonej na życzenie +3 zł",
+    "uk": "Усі футомакі можна замовити в смаженому вигляді +3 zł",
+    "en": "All futomaki can be ordered fried on request +3 zł"
+  },
+  "UROMAKI": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "HOSOMAKI": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "GUNKANY": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "NIGIRI": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "INARI WORECZKI": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "MISO ZUPA": {
+    "pl": "Do każdej zupy podajemy porcję chipsów ryżowych 5 sztuk.",
+    "uk": "До кожного супу — порція рисових чіпсів 5 штук",
+    "en": "Each soup comes with a serving of rice chips 5 pieces"
+  },
+  "PSZEKĄSKI": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  },
+  "DODATKI": {
+    "pl": "",
+    "uk": "",
+    "en": ""
+  }
+}

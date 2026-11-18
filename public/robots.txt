@@ -1,3 +1,4 @@
-# Індексацію вимкнено (tools/site.config.json -> allowIndexing). Сторінки мають noindex.
 User-agent: *
 Allow: /
+
+Sitemap: https://menu.sushi-and-chill.pl/sitemap.xml
