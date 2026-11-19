@@ -52,8 +52,7 @@ const I18N = sandbox.QR_I18N;
 
 const origin = config.origin.replace(/\/$/, "");
 const url = (lang) => origin + I18N[lang].path;
-const mapsUrl =
-  "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(config.mapsQuery);
+const mapsUrl = config.mapsUrl;
 
 /* ---------- Іконки (контурні, 24×24, колір береться з тексту кнопки) ---------- */
 
