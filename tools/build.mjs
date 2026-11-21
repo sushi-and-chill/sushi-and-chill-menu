@@ -172,52 +172,109 @@ ${rows}
 
 /* ---------- Структуровані дані ---------- */
 
+/* ---------- Structured data: Schema.org ---------- */
+
 function jsonLd(lang) {
   const t = I18N[lang];
-  const data = {
-    "@context": "https://schema.org",
+
+  const restaurantId = `${origin}/#restaurant`;
+  const websiteId = `${origin}/#website`;
+  const pageUrl = url(lang);
+  const pageId = `${pageUrl}#webpage`;
+  const imageUrl = `${origin}/assets/images/og-image.png`;
+
+  const restaurant = {
     "@type": "Restaurant",
-    "@id": origin + "/#restaurant",
+    "@id": restaurantId,
     name: config.name,
-    url: url(lang),
-    image: [origin + "/assets/images/og-image.png"],
-    logo: origin + "/assets/images/logo.png",
+    url: pageUrl,
+    description: t.metaDescription,
+    image: [imageUrl],
+    logo: `${origin}/assets/images/logo.png`,
     telephone: config.phone,
-    slogan: t.tagline,
     servesCuisine: ["Sushi", "Japanese"],
     currenciesAccepted: "PLN",
     address: {
       "@type": "PostalAddress",
       streetAddress: config.street,
       addressLocality: config.city,
+      postalCode: config.postalCode,
       addressCountry: config.country,
     },
     hasMap: mapsUrl,
-    menu: url(lang),
-    sameAs: [config.instagram, config.facebook].filter(Boolean).map((u) => new URL(u).href),
+    menu: pageUrl,
+    sameAs: [config.instagram, config.facebook]
+      .filter(Boolean)
+      .map((value) => new URL(value).href),
   };
 
-  if (config.postalCode) data.address.postalCode = config.postalCode;
-  if (config.priceRange) data.priceRange = config.priceRange;
-  if (config.legal && config.legal.companyName) data.legalName = config.legal.companyName;
-  if (config.legal && config.legal.email) data.email = config.legal.email;
-  if (config.geo && config.geo.latitude && config.geo.longitude) {
-    data.geo = {
-      "@type": "GeoCoordinates",
-      latitude: config.geo.latitude,
-      longitude: config.geo.longitude,
-    };
+  if (config.priceRange) {
+    restaurant.priceRange = config.priceRange;
   }
-  if (config.openingHours.length) {
-    data.openingHoursSpecification = config.openingHours.map((h) => ({
+
+  if (config.legal?.companyName) {
+    restaurant.legalName = config.legal.companyName;
+  }
+
+  if (config.legal?.email) {
+    restaurant.email = config.legal.email;
+  }
+
+  if (
+    Array.isArray(config.openingHours) &&
+    config.openingHours.length > 0
+  ) {
+    restaurant.openingHoursSpecification = config.openingHours.map((hours) => ({
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: h.days,
-      opens: h.opens,
-      closes: h.closes,
+      dayOfWeek: hours.days,
+      opens: hours.opens,
+      closes: hours.closes,
     }));
   }
 
-  return JSON.stringify(data).replace(/</g, "\\u003c");
+  const website = {
+    "@type": "WebSite",
+    "@id": websiteId,
+    url: `${origin}/`,
+    name: config.name,
+    publisher: {
+      "@id": restaurantId,
+    },
+    inLanguage: LANGS.map((language) => I18N[language].locale),
+  };
+
+  const webpage = {
+    "@type": "WebPage",
+    "@id": pageId,
+    url: pageUrl,
+    name: t.pageTitle,
+    description: t.metaDescription,
+    inLanguage: t.locale,
+    isPartOf: {
+      "@id": websiteId,
+    },
+    about: {
+      "@id": restaurantId,
+    },
+    mainEntity: {
+      "@id": restaurantId,
+    },
+    primaryImageOfPage: {
+      "@type": "ImageObject",
+      url: imageUrl,
+    },
+  };
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      restaurant,
+      website,
+      webpage,
+    ],
+  };
+
+  return JSON.stringify(structuredData).replace(/</g, "\\u003c");
 }
 
 function legalFooter(lang) {
@@ -409,12 +466,30 @@ ${alternates}
 `
 );
 
-writeOut(
-  "robots.txt",
-  config.allowIndexing
-    ? `User-agent: *\nAllow: /\n\nSitemap: ${origin}/sitemap.xml\n`
-    : `# Індексацію вимкнено (tools/site.config.json -> allowIndexing). Сторінки мають noindex.\nUser-agent: *\nAllow: /\n`
-);
+// ---------- Robots.txt ----------
+
+function generateRobotsTxt() {
+  const lines = [
+    "User-agent: *",
+    "Allow: /",
+    "",
+    "User-agent: OAI-SearchBot",
+    "Allow: /",
+    "",
+    "User-agent: GPTBot",
+    "Disallow: /",
+    "",
+  ];
+
+  // Sitemap публікуємо, якщо індексацію сайту дозволено.
+  if (config.allowIndexing) {
+    lines.push(`Sitemap: ${origin}/sitemap.xml`, "");
+  }
+
+  return lines.join("\n");
+}
+
+writeOut("robots.txt", generateRobotsTxt());
 
 // 404.html — статична сторінка; оновлюємо версію CSS, щоб не брати застарілий кеш.
 const notFoundFile = join(publicDir, "404.html");

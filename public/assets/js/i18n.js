@@ -14,7 +14,7 @@ window.QR_I18N = {
     // <head>
     pageTitle: "Menu sushi Wrocław — ceny i alergeny | SUSHI & CHILL",
     metaDescription:
-      "Menu SUSHI & CHILL we Wrocławiu: Zawsze świeże i pyszne sushi burgery, wege sushi, california, filadelfia, futomaki, uromaki, hosomaki, nigiri, sushi zestawy, pszekąski i zupy miso. Ceny, gramatura i alergeny. Stefana Czarnieckiego 15.",
+      "Menu SUSHI & CHILL we Wrocławiu: Zamawiaj zawsze świeże i pyszne sushi burgery, wege sushi, california, filadelfia, futomaki, uromaki, hosomaki, nigiri, sushi zestawy, pszekąski i zupy miso. Ceny, gramatura i alergeny. Stefana Czarnieckiego 15, Sczepin",
     ogDescription: "Sushi we Wrocławiu. Smak, o którym będziesz marzyć cały czas.",
     // widoczny interfejs
     skip: "Przejdź do menu",
@@ -69,7 +69,7 @@ Nie znalazłeś idealnego połączenia w naszym menu? Zadzwoń do nas, a z przyj
     path: "/menu/ua/",
     pageTitle: "Меню суші Вроцлав — ціни та алергени | SUSHI & CHILL",
     metaDescription:
-      "Меню SUSHI & CHILL у Вроцлаві: Завжди свіжі та смачні суші-бургери, веге суші, каліфорнія, філадельфія, футомакі, уромакі, хосомакі, нігірі, суші сети, закуски та місо-супи. Ціни, вага й алергени. Stefana Czarnieckiego 15.",
+      "Меню SUSHI & CHILL у Вроцлаві: Замовляйте завжди свіжі та смачні суші-бургери, веге суші, каліфорнія, філадельфія, футомакі, уромакі, хосомакі, нігірі, суші сети, закуски та місо-супи. Ціни, вага й алергени. Stefana Czarnieckiego 15, Szczepin",
     ogDescription: "Суші у Вроцлаві. Смак, про який ти мріятимеш постійно.",
     skip: "Перейти до меню",
     tagline: "Смак, про який ти мріятимеш постійно",
@@ -124,7 +124,7 @@ Nie znalazłeś idealnego połączenia w naszym menu? Zadzwoń do nas, a z przyj
     path: "/menu/en/",
     pageTitle: "Sushi menu Wroclaw — prices & allergens | SUSHI & CHILL",
     metaDescription:
-      "SUSHI & CHILL menu in Wrocław: Always fresh and delicious sushi burgers, futomaki, uramaki, hosomaki, nigiri, sets and miso soups. Prices, weights and allergens. Stefana Czarnieckiego 15.",
+      "SUSHI & CHILL Menu in Wrocław: Order always fresh and delicious sushi burgers, vegetarian sushi, California rolls, Philadelphia rolls, futomaki, uromaki, hosomaki, nigiri, sushi sets, appetizers, and miso soup. Prices, weight, and allergens. 15 Stefana Czarnieckiego Street, Sczepin",
     ogDescription: "Sushi in Wrocław. A taste you will keep dreaming about.",
     skip: "Skip to menu",
     tagline: "A taste you will keep dreaming about",
